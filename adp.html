@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  
+  
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+  }
+
+
+
+
+
+    
+  .tab-layout {
+    background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E8E2D7, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+
+    overflow: auto;
+    white-space: nowrap;
+    position: fixed;
+    top: 10.0%;
+    left: 0;
+    width: 100%;
+height: 8%;
+      border-bottom: 2px groove   #000;
+    
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+   box-shadow: 0 20px 25px  rgba(0, 0, 0, 95);
+
+  }
+
+
+     .tab {
+      display: inline-block;
+      color: #000;
+width: 100%;
+      height: 45%;
+      padding-top: 5px;
+      padding-bottom: 8px;
+      background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E8ECFF, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+
+      justify-content: center; /* توسيط العناصر أفقيًا */
+    align-items: center; /* توسيط العناصر عموديًا */
+    text-align: center; /* توسيط النص */
+      transition: opacity 0.10s ease-in-out;
+border-bottom: 5px groove  #fff; 
+    border-top: 5px   groove  #fff; 
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+box-shadow: 0 0px 35px  rgba(0, 0, 0, 100);
+
+
+font-size: 250%;
+      margin: 1%;
+      cursor: pointer;
+      border-radius: 30px;
+      font-weight: bold;
+      flex-grow: 1;
+    }
+
+    .tab::after {
+      content: "";
+      display: flex;
+      width: 0%;
+      height: 2px;
+      background-image: linear-gradient(to right, #7600FF, #00FFC4, #0010FF, #FF0F00);
+    
+  margin-top: -50px;
+      opacity: 0;
+
+    }
+
+    .tab.active::after {
+      opacity: 1;
+    }
+    
+
+    .content {
+      margin-top: 100px;
+      padding: 0px;
+      
+    }
+    
+
+    .content > div {
+      scroll-snap-align: start;
+    }
+
+    
+
+h1 {
+text-align: center;
+margin-top: 0px;
+
+
+
+}
+
+
+
+
+
+button {
+  background-image: linear-gradient(to right, #9C9689, #DED8CC, #F3EDEA, #FDFDFC, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #FDFDFC, #F3EDEA, #DED8CC, #9C9689);padding: 15px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+
+
+margin:20px 10px;
+height: 430px;
+width: 275px;
+ 
+ border-bottom: 15px groove   #000;
+  border-top: 10px groove rgba(0, 0, 0, 1);
+border-left: 0px ridge rgb(255 0 0 / 100%);
+border-right: 0px ridge #f1f8e9;
+border-radius: 55px 55px 55px 55px;
+bord-radius: 20px 80px 20px 50px;" 
+
+
+
+
+} 
+
+} 
+
+.button {
+text-align: center;
+}
+ {
+display: block;
+}
+    button:active {
+     border-left: 0px solid rgb(255 213 105 / 80%);
+
+border-right: 0px solid #000BFF;
+
+border-top: 15px double  rgb(255 0 2 / 50%);
+border-bottom: 10px groove rgb(255 219 97 / 100%);
+
+    }
+
+
+
+
+</style>
+
+<!----------  اكواد استايل التطبيق شامل  ------------>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+body {
+padding: 0;
+margin: 0;
+user-select: none;
+list-style: none;
+background-image: linear-gradient(to right, #D4DBFF, #fff, #D4DBFF, #D4DBFF, #fff, #D4DBFF, #D4DBFF, #fff, #D4DBFF, #D4DBFF, #fff, #D4DBFF, #D4DBFF, #fff, #D4DBFF);
+      background-size: cover;
+font-weight: 500;
+font-size: 16px;
+text-align: right;
+margin: auto;
+/* position: relative; */
+direction: ltr;
+
+/**  تغير  خلفيه التطبيق **/
+/**  تغير  خلفيه التطبيق **/
+}
+
+
+header {
+/**  تغير الون خلفيه اللوجو   **/
+    color: #3545FF;
+    font-size: 0.2rem;
+    direction: rtl;
+    background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E1D7CD, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+
+/**  تغير الون خلفيه اللوجو   **/
+
+ 
+   font-size: 0.2rem;
+    direction: rtl;
+    
+
+/**  تغير الون خلفيه اللوجو   **/
+
+ 
+   padding: 25px;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    border-bottom: 0px solid #0001FF;
+    
+padding: 0px;
+
+margin-bottom: 0px;
+position: fixed;
+font-size: 10px;
+top:0;
+height:10%;
+width: 100%;
+
+}
+
+
+
+
+
+    
+
+    
+
+.telegram-button {
+position: absolute;
+      top: 35%;
+      right: -53px;
+      z-index: 999;
+      color: #000;
+      width: 33%;
+      height: 33%;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+
+    }
+
+ .menu-button {
+      position: absolute;
+      top: 35%;
+      left: -53px;
+      z-index: 999;
+      color: #000;
+      width: 33%;
+      height: 33%;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+
+    }
+
+    #sidebar {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+color: #000;
+      top: 320px;
+      left: -100%;
+      width: 60%;
+      height: 60%;
+      background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E8ECFF, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+box-shadow: 0 5px 15px  rgba(146, 86, 255, 10);
+border-bottom: 10px groove   #000;
+  border-top: 10px groove rgba(0, 0, 0, 1);
+border-left: 0px ridge rgb(255 0 0 / 100%);
+border-right: 3px ridge   #000;
+border-radius: 25px 25px 25px 25px;
+
+    }
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+font-size: 20px;
+    }
+    .hidden {
+    display: none;
+}
+
+
+.sidebar-item:not(:first-child) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+font-size: 20px;
+    margin-bottom: 50px; /* تباعد العناصر عن بعض */
+    height: 100px; /* قم بتعديل الارتفاع حسب الحجم المطلوب */
+}
+
+    #sidebar.active {
+      left: 0;
+    }
+ .logo {
+            font-weight: bold;
+            margin-bottom: 10px;
+font-size: 20px;
+        }
+
+        .menu-icon {
+            cursor: pointer;
+        }
+
+        .menu-content {
+            display: none;
+        }
+
+.sidebar-item {
+    position: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    height: 50px; /* تباعد النص الي تحت  */
+    cursor: none;
+font-size: 20px;
+}
+.sidebar-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000; /* يمكنك تعديل لون النص حسب الحاجة */
+    cursor: none;
+font-size: 20px;
+}
+
+.sidebar-item a:hover {
+    color: #FF0F00; /* يمكنك تعديل لون النص عند التحويم عليه حسب الحاجة */
+}
+
+
+.section p {
+    
+    font-weight: bold;
+font-size: 80px;
+    margin: 30px; /* قم بتعديل هوامش النص حسب الحاجة */
+    height: 50px;
+       padding-right: 20px; /* قم بتعديل الهامش الأيمن حسب حجم الصورة */
+}
+        
+     .logo-image {
+    padding: 10px;
+max-width: 100%;
+padding: 15px;
+margin-top: 39%;
+padding-left: 30px;
+padding-right:30px;
+ border-bottom: 2px groove rgb(0 0 0 / 80%);
+    border-top: 2px groove rgb(255 255 255/ 80%);
+border-left: :0px groove rgb(255 255 255/ 80%);
+border-right: 0px ridge rgb(255 255 255 / 100%);
+font-weight: bold; text-align: center;color: #; 
+border-radius: 80px 80px 80px 80px;" height="19px" width="65%" vspace="15px; ">
+  </div>
+}
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35%;
+font-size: 20px;
+margin-top: 50%;
+}
+
+.section a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000; /* يمكنك تعديل لون النص حسب الحاجة */
+font-size: 50px;
+margin-top: 30%;
+}
+
+.section a:hover {
+    color: #000; /* يمكنك تعديل لون النص عند التحويم عليه حسب الحاجة */
+}
+
+.section-image {
+    width: 100%; /* قم بتعديل العرض حسب الحجم المطلوب */
+    height: 100%; /* قم بتعديل الارتفاع حسب الحجم المطلوب */
+   margin-top: -30%;
+font-size: 100px;
+ margin-right: 25px; /* قم بتعديل المسافة بين الصورة والنص حسب الحاجة */
+}
+
+    .menu-content .sidebar {
+      margin-top: 60%;
+      font-size: 66px;
+      color: #000;
+    }
+
+
+#page:hover {
+background: none;
+}
+#page {
+margin-top: 90px;
+width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<!----------  اكواد استايل القائمة  ------------>
+
+.
+
+
+
+
+
+    
+
+
+<!--- اسم القسم --->
+<style>
+
+
+    
+
+
+
+
+
+#page:hover {
+background: none;
+}
+#page {
+margin-top: 90px;
+width: 100%;
+}
+
+.popup 
+{
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E1D7CD, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+  padding: 10px;
+
+z-index: 9999;
+text-align: center;
+align-items: center; 
+border-bottom: 5px groove  #9C9689;
+   border-top: 5px ridge  #fff;
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+border-radius: 80px 80px 80px 80px;
+} 
+
+
+h5 {
+
+    color: #721ACF;
+font-weight: bold;
+    font-size: 2.0rem;
+    direction: rtl;
+margin:60px;
+margin-top: -80%;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+    border-bottom: 5px ridge rgb(233 30 99 / 100%);
+
+    border-radius: 200px 200px 390px 390px;
+padding: 15px;
+}
+
+
+
+
+
+</style>
+
+<!----------  اكواد استايل القائمة  ------------>
+
+.
+
+
+
+
+
+    
+
+
+<!--- اسم القسم --->
+<style>
+
+
+    
+
+
+</style>
+
+<!----------  اكواد استايل التطبيق شامل  ------------>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+body {
+
+
+/**  تغير  خلفيه التطبيق **/
+background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E8ECFF, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+   /**  تغير  خلفيه التطبيق **/
+}
+
+
+
+
+
+
+
+#page:hover {
+background: none;
+}
+#page {
+margin-top: 100px;
+width: 100%;
+}
+
+.colorاحمر {
+  color: #FF0035;
+}
+.colorتليجرام {
+  color: #239DD0;
+}
+
+.colorتليجرام2 {
+  color: #36AEE1;
+}
+
+
+
+.colorفيسبوك {
+  color: #0863F7;
+}
+
+.colorفيسبوك2 {
+  color: #16A5F4;
+}
+
+
+
+
+.color2 {
+  color: #FF0035;
+}
+
+
+.color3 {
+  color: #1d7d99;
+}
+
+
+.color4 {
+  color: #9D856C;
+}
+
+.colorازرق {
+  color: #002DFF;
+}
+
+
+.colorبنفسجي {
+  color: #CD00FF;
+}
+
+    .colorخياري {
+  color: #2290B1;
+}
+
+
+
+.colorذهبي {
+  color: #FFBA00;
+}
+
+
+
+.colorاخضر {
+  color: #008215;
+}
+        
+
+
+.colorحقي {
+  color: #E6EAFF;
+}
+
+
+
+.color111{
+  color: #2391B2،;
+}
+        
+
+
+.colorاسود {
+  color: #000;
+}
+
+
+.colorad {
+  color: #FFD000;
+}
+        
+
+
+.colorاسود {
+  color: #000;
+}
+
+.colorbein {
+  color: #7526FF;
+}
+.colorbein2 {
+  color: #FF2681;
+}
+
+
+.colorاخقوي {
+  color: #E1FF00;
+}
+
+
+.colorرمادي {
+  color: #8f8f8f;
+}
+
+.colorوردي {
+  color: #FF0088;
+}
+
+
+.colorsh2 {
+  color: #00CD9A;
+}
+
+.colorsh1 {
+  color: #00D358;
+}
+
+
+.colorsh3 {
+  color: #009AFF;
+}
+
+.colorad {
+  color: #F2B91A;
+}
+
+
+.colorkids{
+  color:#F8D800;
+}
+.colorواتساب {
+  color:#3BE059;
+}
+
+.colorذهبي {
+  color: #FBCA0E;
+}
+
+.colorاخبار {
+  color:#F86838;
+}
+
+.colorعربية {
+  color:#18F880;
+}
+
+
+.colorوياك {
+  color:#FF7F00;
+}
+
+
+.colorوياك2 {
+  color:#FFB872;
+}
+
+        .colorابيض {
+  color:#fff;
+}
+
+        hr{
+   border-color: #9C9689;
+   background-color:  #FF1900;
+   color: #00FFCE;
+border-bottom: 2px groove   #FF1900;
+  border-top: 2px groove   #9C9689;
+border-radius: 100px 100px 100px 100px;" 
+
+  }
+
+    
+<style>
+
+.popup 
+{
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E1D7CD, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+  padding: 10px;
+
+z-index: 9999;
+text-align: center;
+align-items: center; 
+border-bottom: 5px groove  #9C9689;
+   border-top: 5px ridge  #fff;
+border-left: 3px groove  #9C9689;
+border-right: 3px groove  #9C9689;
+border-radius: 80px 80px 80px 80px;
+} 
+
+
+h5 {
+
+    color: #FFBF00;
+font-weight: bold;
+    font-size: 4.0rem;
+    direction: rtl;
+margin:30px;
+margin-top: -40%;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+    border-bottom: 5px ridge rgb(233 30 99 / 100%);
+
+    border-radius: 200px 200px 390px 390px;
+padding: 1px;
+}
+
+
+
+.popup button 
+{ 
+
+background-image: linear-gradient(to right, #7D796E, #fff, #fff, #fff, #fff, #E8E2D7, #E8E2D7, #FDFDFC, #FDFDFC, #7D796E);
+border-color: #5A00E9;
+padding: 0px;
+text-align: center;
+        text-decoration: none;
+        text-align: center;
+color: #721ACF;
+font-size: 50px;
+font-weight: bold;
+margin:20px;
+max-width: 100%;
+height: 100%;
+height: 95px;
+width: 450px;
+border-bottom: 10px groove  #9C9689;
+
+
+   border-top: 9px groove  #9C9689;
+border-left: 0px groove #fff;
+border-right: 0px groove #fff;
+border-radius: 50px 50px 50px 50px;
+}
+.popup img
+{
+max-width: 100%;
+height: auto;
+margin-bottom: 10px;
+max-height: 150px; 
+}
+
+.empty-space 
+
+{
+background-color: rgba(0, 0, 0, 0.0);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 9999;
+display: none; }
+
+
+.color380 {
+  color: #00A682;
+}
+
+
+.color240 {
+  color: #00CECC;
+}
+
+
+.color900 {
+  color: #99B300;
+}
+
+.color720 {
+  color: #C1BE00;
+}
+
+.color480 {
+  color:#0021FF;
+}
+
+
+.color580 {
+  color: #EC6E00;
+}
+
+    .color1080 {
+  color: #A83300;
+}
+
+.colorاحمر {
+  color: #FF0019;
+}
+
+.colorازرق{
+  color: #0027FF;
+}
+
+
+.colorاخضر {
+  color:#00A516;
+}
+
+    .colorوردي {
+  color: #FF00F8;
+}
+
+
+
+
+ .colorبنفسجي{
+  color: #B300FF;
+}
+
+.color10{
+  color: #377E66;
+}
+
+
+.colorbein{
+  color: #594091;
+}
+
+.colorbein2{
+  color: #fff;
+}
+
+
+
+
+
+</style>
+
+</head> 
+
+<header>
+
+
+
+
+
+
+<div class="empty-space" onclick="hidePopup()"></div>
+
+
+<div id="popup" class="popup"> <h1> AD SPORT 1</h1> 
+
+<button onclick="window.open('go:7br1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (240P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:5br1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:3br1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (360P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:9br1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (520P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:14br1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:1br1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:8br1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:15br1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:12br1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:10br1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> 
+
+
+
+
+
+
+
+
+
+<div id="popup2" class="popup"> <h5>BEIN SPORT 2</h5> 
+
+
+<button onclick="window.open('go:7br2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (240P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:5br2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:3br2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (360P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:9br2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (520P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:14br2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:1br2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:8br2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:15br2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:12br2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:10br2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+
+
+
+
+
+
+
+</div> 
+
+
+
+
+
+
+<div id="popup3" class="popup"> <h2>BEIN SPORT 3</h2> 
+<button onclick="window.open('go:7br3')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (240P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:5br3')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:3br3')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (360P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:9br3')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (520P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:14br3')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:1br3')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:8br3')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:15br3')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:12br3')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:10br3')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+
+
+
+
+
+
+</div> 
+
+
+
+
+
+</div> <div id="popup4" class="popup"> <h2>BEIN SPORT 4</h2> 
+
+<button onclick="window.open('go:7bs1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (240P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:5bs1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:3bs1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (360P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:9bs1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (520P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:14bs1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:1bs1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:8bs1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:15bs1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:12bs1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:10bs1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+
+
+
+
+
+
+</div> 
+
+
+
+
+
+<div id="popup5" class="popup"> <h2>BEIN SPORT 5</h2> 
+<button onclick="window.open('go:7bs2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (240P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:5bs2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:3bs2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (360P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:9bs2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (520P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:14bs2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:1bs2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:8bs2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:15bs2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:12bs2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:ssc1jw')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (متعددة)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+
+
+
+
+
+
+</div> 
+
+
+<div id="popup6" class="popup"> <h2>SSC SPORT 1</h2>
+
+<button onclick="window.open('go:4ad2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:10ad2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:8ad2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (360P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:6ad2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (520P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:2ad2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:7ad2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:3ad2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:1ad2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:5ad2')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+</div> 
+
+
+
+
+<div id="popup7" class="popup"> <h5> AD SPORT 1 </h5>
+
+
+<button onclick="window.open('go:4ad1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:10ad1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:8ad1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (360P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:6ad1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (520P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:2ad1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:7ad1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (720P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:3ad1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+<button onclick="window.open('go:1ad1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+<button onclick="window.open('go:5ad1')"<div class="my-element"><span class="color480">جودة  _<span class="colorبنفسجي"><span class="colorاحمر"> (480P)  <span class="colorاخضر"></span></span>   </button>
+
+<button onclick="window.open('go:adp1mm')"<div class="my-element"><span class="color480">عرض جميع    <span class="colorبنفسجي"><span class="colorاحمر"> (الجودات)  <span class="colorاخضر"></span></span>   </button>
+
+
+
+</div> 
+
+
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+<div id="popup8" class="popup"> <h2>BEIN SPORT </h2> 
+ </div> </div>
+<script> function showPopup(adType) { if (adType === 'ADPRE1')
+{ document.getElementById("popup").style.display = "block"; } else if (adType === 'ADPRE2') { document.getElementById("popup2").style.display = "block"; } else if (adType === 'ADPRE3') { document.getElementById("popup3").style.display = "block"; } else if (adType === 'ADPRE4') { document.getElementById("popup4").style.display = "block"; } else if (adType === 'ADPRE5') { document.getElementById("popup5").style.display = "block"; } else if (adType === 'ADPRE6') { document.getElementById("popup6").style.display = "block"; } else if (adType === 'ADPRE7') {  document.getElementById("popup7").style.display = "block"; } document.querySelector('.empty-space').style.display = 'block'; } function hidePopup() { document.getElementById("popup").style.display = "none"; document.getElementById("popup2").style.display = "none"; document.getElementById("popup3").style.display = "none"; document.getElementById("popup4").style.display = "none"; document.getElementById("popup5").style.display = "none"; document.getElementById("popup6").style.display = "none"; document.getElementById("popup7").style.display = "none"; document.getElementById("popup8").style.display = "none"; document.querySelector('.empty-space').style.display = 'none'; } </script> </
+body> </html> 
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<header>
+  <div class="header-title">
+    <img src="data:image/png;base64,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" style="margin-right: 25%;margin-top: 5%;background-color: rgb(255 255 255 / 0%);border-bottom: 0px solid rgb(255 255 255 / 100%);
+    border-top: 0px solid rgb(255 255 255 / 100%);
+border-left: 0px groove rgb(255 255 255 / 100%);
+border-right: 0px ridge rgb(255 255 255 / 100%);padding: 0px;border-radius: 10px; " height="54px" width="50%" vspace="5px;     }border-radius:6px;width:100%"><div class="middle">
+
+  <!-- زر رمز التلغرام -->
+ 
+
+<a href="https://t.me/wacelalorshepro" class="telegram-button" id="telegramButton"><i class="fa fa-telegram"></i></a>
+  
+
+  </a>
+    <a href="javascript:void(0)" class="menu-button" id="menuButton"><i class="fa fa-bars"></i></a>
+  
+
+
+
+
+  </header>
+  
+  
+<div id="sidebar">
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <div class="logo">
+                <img src="data:image/png;base64,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 " alt="لوغو" class="logo-image">
+            </div>
+        </div>
+    <div class="sidebar-item">
+    <div class="section">
+        <a href="https://t.me/wacelalorshepro">
+            <i class="fa fa-telegram section-image"></i>
+            <span class="colorتليجرام">𝗧𝗘𝗟𝗘<span class="colorتليجرام">𝗚𝗥𝗔𝗠<br><span class="colorاحمر"></span></p>
+        
+</a>
+    </div>
+</div>
+    <div class="sidebar-item">
+    <div class="section">
+        <a href="https://wsend.co/967735981122">
+            <i class="fa fa-whatsapp section-image"></i>
+            <span class="colorواتساب">WHATS<span class="colorواتساب">APP<span class="colorاحمر"></span></p>
+       
+ </a>
+    </div>
+</div><div class="sidebar-item">
+    <div class="section">
+        <a href="https://www.facebook.com/profile.php/?id=100006472802984&name=xhp_nt__fb__action__open_user&locale=ar_AR">
+            <i class="fa fa-facebook section-image"></i><span class="colorفيسبوك">𝗙𝗔𝗖𝗘<span class="colorفيسبوك">𝗕𝗢𝗢𝗞<span class="colorفيسبوك"></span></p>
+                    </a>
+            </div>
+        </div>
+<br>
+<div class="sidebar-item">
+    <div class="section">
+        <a href="https://youtube.com/@wacelalorshe?si=_FnGDbAkrYlHmnV_">
+            <i class="fa fa-youtube-play section-image"></i><span class="colorاحمر">YOU_T<span class="colorاحمر">UBE<span class="colorاحمر"></span></p>
+                    </a>
+            </div>
+        </div>
+     </a>
+
+        <div class="sidebar-item">
+    <div class="section">
+        <a href="https://wacellivepro.blogspot.com/2023/03/wacel-tv.html">
+            <i class="fa fa-globe section-image"></i><span class="colorذهبي">WACEL_TV<span class="colorاحمر">  <span class="colorاحمر"></span></p>
+                    </a>
+            </div>
+        </div>
+     
+
+
+     
+ </div>
+</div>
+  <div class="tab-layout">
+    <div class="tab active" onclick="window.open( 'go:radiobein')"><span class="colorازرق">قسم   <span class="colorاحمر">الراديو<span class="colorاحمر"></span></p></div>
+    <div class="tab" onclick="window.open( 'go:Jedwal')"><span class="colorازرق">مباريات  <span class="colorاحمر">اليوم<span class="colorاحمر"></span></p></div>
+        <div class="tab" onclick="window.open( 'go:sersand')"><span class="colorازرق">أفلام <span class="colorاسود"> و <span class="colorاحمر">مسلسلات </span></p></div>
+
+  </div>
+              <br>
+
+  <div class="content">
+     <div class="tabContent" id="tabContent1">
+  <div>  
+
+  	
+<!-- /بداية كود شريط اخباري-->
+		
+
+    
+   
+	<!-- /نهاية كود الشريط الاخباري-->
+
+
+   
+
+
+   
+
+    
+   
+   
+   
+	
+</header>
+<div id="page">
+<div class="grid1-container">
+<div align="center" class="button">
+<div id="buttons-list">
+	
+	
+	
+<!--- اقسام التطبيق --->
+	
+	<section class="matchesHp">
+    <div class="ttl">
+   
+        
+          
+
+
+
+
+
+
+
+	
+	
+<!--- اقسام التطبيق --->
+	
+	<section class="matchesHp">
+    <div class="ttl">
+   
+  
+          
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+  
+<button onclick="window.open(' go:adp1mm' )"><img <img src="data:image/jpeg;base64,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 " style="
+background-image: linear-gradient(to right, #000, #000, #000, #000, #000, #000, #000, #000, #000, #000);padding: 10px ;
+box-shadow: 0 5px 10px  rgba(235, 177, 6, 50);
+   border-top: 15px groove  #F2B91A;
+border-left:0px ridge  #6D42B8;
+border-right:0px groove  #6D42B8;
+border-bottom: 15px groove  #F2B91A;
+border-radius: 30px 30px 30px 30px;
+margin-top: 10%;
+margin-left: -0%;
+"  height="190px" width="190px" vspace="8px">
+
+  <h2 style="display: flex; /* استخدام Flexbox للعناصر */
+    justify-content: center; /* توسيط العناصر أفقيًا */
+    align-items: center; /* توسيط العناصر عموديًا */
+
+border-bottom: 2px groove  #000; 
+    border-top: 1px groove  rgba(0, 100, 100, 10);;
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+border-radius: 51px 50px 50px 51px;
+max-width: 90%; 
+height: 15%;
+width: 90%; 
+color: rgb(25 216 205  / 100%);
+;background-image: linear-gradient(to right, #9C9689, #DED8CC, #F3EDEA, #FDFDFC, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #FDFDFC, #F3EDEA, #DED8CC, #9C9689);
+         box-shadow: 0 7px 10px  rgba(0, 0, 100, 5);
+  
+
+margin-top: 8%;
+margin-left: 7%;
+font-size: 25px;
+font-weight: bold;
+
+
+"><p><p><span class="colorad">A<span class="colorad">D <span class="colorاسود">PREMIUM</span><span class="colorad"> 1</span></p></h2></h2>
+</button>
+  
+  
+  
+<button onclick="window.open(' go:adp2mm ')"><img <img src="data:image/jpeg;base64,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 " style="
+background-image: linear-gradient(to right, #000, #000, #000, #000, #000, #000, #000, #000, #000, #000);padding: 10px ;
+box-shadow: 0 5px 10px  rgba(235, 177, 6, 50);
+   border-top: 15px groove  #F2B91A;
+border-left:0px ridge  #6D42B8;
+border-right:0px groove  #6D42B8;
+border-bottom: 15px groove  #F2B91A;
+border-radius: 30px 30px 30px 30px;
+margin-top: 10%;
+margin-left: -0%;
+"  height="190px" width="190px" vspace="8px">
+
+  <h2 style="display: flex; /* استخدام Flexbox للعناصر */
+    justify-content: center; /* توسيط العناصر أفقيًا */
+    align-items: center; /* توسيط العناصر عموديًا */
+
+border-bottom: 2px groove  #000; 
+    border-top: 1px groove  rgba(0, 100, 100, 10);;
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+border-radius: 51px 50px 50px 51px;
+max-width: 90%; 
+height: 15%;
+width: 90%; 
+color: rgb(25 216 205  / 100%);
+;background-image: linear-gradient(to right, #9C9689, #DED8CC, #F3EDEA, #FDFDFC, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #FDFDFC, #F3EDEA, #DED8CC, #9C9689);
+         box-shadow: 0 7px 10px  rgba(0, 0, 100, 5);
+  
+
+margin-top: 8%;
+margin-left: 7%;
+font-size: 25px;
+font-weight: bold;
+
+
+"><p><p><span class="colorad">A<span class="colorad">D <span class="colorاسود">PREMIUM</span><span class="colorad"> 2</span></p></h2></h2>
+</button>
+  
+
+<br>
+ 
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a18630aba29ba11f3a69f333218f4471',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/a18630aba29ba11f3a69f333218f4471/invoke.js"></scr' + 'ipt>');
+</script>
+ <script type="text/javascript">
+	atOptions = {
+		'key' : 'a18630aba29ba11f3a69f333218f4471',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/a18630aba29ba11f3a69f333218f4471/invoke.js"></scr' + 'ipt>');
+</script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a18630aba29ba11f3a69f333218f4471',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/a18630aba29ba11f3a69f333218f4471/invoke.js"></scr' + 'ipt>');
+</script>
+ <script type="text/javascript">
+	atOptions = {
+		'key' : 'a18630aba29ba11f3a69f333218f4471',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/a18630aba29ba11f3a69f333218f4471/invoke.js"></scr' + 'ipt>');
+</script>
+ 
+<br>
+
+
+        
+	
+ 
+
+  
+<button onclick="window.open(' go:ad1ASIA')"> <img src=" data:image/jpeg;base64,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" style="
+background-image: linear-gradient(to right, #000, #000, #000, #000, #000, #000, #000, #000, #000, #000);padding: 10px ;
+box-shadow: 0 5px 10px  rgba(235, 177, 6, 50);
+   border-top: 15px groove  #F2B91A;
+border-left:0px ridge  #6D42B8;
+border-right:0px groove  #6D42B8;
+border-bottom: 15px groove  #F2B91A;
+border-radius: 30px 30px 30px 30px;
+margin-top: 10%;
+margin-left: -0%;
+"  height="190px" width="190px" vspace="8px">
+
+  <h2 style="display: flex; /* استخدام Flexbox للعناصر */
+    justify-content: center; /* توسيط العناصر أفقيًا */
+    align-items: center; /* توسيط العناصر عموديًا */
+
+border-bottom: 2px groove  #000; 
+    border-top: 1px groove  rgba(0, 100, 100, 10);;
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+border-radius: 51px 50px 50px 51px;
+max-width: 90%; 
+height: 15%;
+width: 90%; 
+color: rgb(25 216 205  / 100%);
+;background-image: linear-gradient(to right, #9C9689, #DED8CC, #F3EDEA, #FDFDFC, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #FDFDFC, #F3EDEA, #DED8CC, #9C9689);
+         box-shadow: 0 7px 10px  rgba(0, 0, 100, 5);
+  
+
+margin-top: 8%;
+margin-left: 7%;
+font-size: 25px;
+font-weight: bold;
+
+
+"><p><p><span class="colorad">A<span class="colorad">D <span class="colorاسود">ASIAN</span><span class="colorad"> 1</span></p></h2></h2>
+</button>
+  
+
+
+
+  <button onclick="window.open(' go:ad2ASIA')"> <img src="data:image/jpeg;base64,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MspbnZniAAeGcdvt7+QWDxHaMY8VUOO7q7PqXDcNHWOvBzRtp3kAB9P/AGeOOeQ835hUNsOoatjKoNuUwGCyTz3H3j/ZSumtXVVNVR01ymdPTSENEkh86Mk8y48xx455DlywQh9SaPrLE01DHCpo92OkaMFn4w7OPDP7sgKuLfnsbIxzJGhzHAhzXDII7isj1pp9tiuTTTbuqVALo8n0CDxb3nGRxPf24JQV1ERAREQEREBERAREQEREBERAREQFqvg5oWU2nBUjaZKqRziduCA07QM9vIn9JZUtn0g6F2lreacAM6LBwMecCQ79rKCZWQXdrG6lrRUB4i628v2jztu88s+xa+qrqjSkdzqhXxVLKY8OsOk9HaB6XvAHu93aFniMboWOhLTEWgsLPRI7MY7Fk+qZKeXUda+l2mMvAy0YBcAA79rPHtXdX6gipKEWuwOnipg4l873HfIfZ/dHbwx7hxz16P0vJUTxXGvj207cPiY7nIew47u32+5BfqcSNp4hMQZQwB5HaccVC61t7bhpmrGG76cdOwuJGC3ieX/buHxU8o/UH2vXP80l/gKDD0REBERAREQEREBERAREQEREBERAWpeDe4NqbC6jJHSUkhGAD6LiXAn47h8FlqlNOXmSx3aOrYMxnzJm4BLmEjIHt4Aj3INsWW6qv9TdK+WnDjHSQvLGxg+lg+k7vP7vmTpdHVwV1LHU0srZYZBlr29v9dyhblo613GsfVPM8L5OLxE4AOPaeIPFBR7BU2WjkM91gqKmQHzI2saWD2nLhk+zl7+y3eX9q/B639Rv8yeQFq/CK39dv8qeQFq/CK39dv8AKgtLXBzQ4ciMqv67uHUNM1Aa4tkqcQNwAefpfsh3zU7JJFS05kle1kUbcue44AA7Ssg1bf336572jbSw5ZA3vHa4+08PkPegg0REBERAREQEREBERAREQEREBERAREQSlk1BcLHNvo5cxnO6GTJjcT2kZ58BxHHh3K+27wh2qpaBWslo34JJI6RnPgARx5ewLLkQbGNY6fMe/wAYsx+I/PyxlcNf4QLNTR/8KZax5BIDGFgB7AS7GPgCsqRBM6g1LX36QCdwjp2uJZAz0R7T3n2+/GMqGREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQf/2Q== " style="
+background-image: linear-gradient(to right, #000, #000, #000, #000, #000, #000, #000, #000, #000, #000);padding: 10px ;
+box-shadow: 0 5px 10px  rgba(235, 177, 6, 50);
+   border-top: 15px groove  #F2B91A;
+border-left:0px ridge  #6D42B8;
+border-right:0px groove  #6D42B8;
+border-bottom: 15px groove  #F2B91A;
+border-radius: 30px 30px 30px 30px;
+margin-top: 10%;
+margin-left: -0%;
+"  height="190px" width="190px" vspace="8px">
+
+  <h2 style="display: flex; /* استخدام Flexbox للعناصر */
+    justify-content: center; /* توسيط العناصر أفقيًا */
+    align-items: center; /* توسيط العناصر عموديًا */
+
+border-bottom: 2px groove  #000; 
+    border-top: 1px groove  rgba(0, 100, 100, 10);;
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+border-radius: 51px 50px 50px 51px;
+max-width: 90%; 
+height: 15%;
+width: 90%; 
+color: rgb(25 216 205  / 100%);
+;background-image: linear-gradient(to right, #9C9689, #DED8CC, #F3EDEA, #FDFDFC, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #FDFDFC, #F3EDEA, #DED8CC, #9C9689);
+         box-shadow: 0 7px 10px  rgba(0, 0, 100, 5);
+  
+
+margin-top: 8%;
+margin-left: 7%;
+font-size: 25px;
+font-weight: bold;
+
+
+"><p><p><span class="colorad">A<span class="colorad">D <span class="colorاسود">ASIAN</span><span class="colorad"> 2</span></p></h2></h2>
+</button>
+  
+
+
+
+  
+
+  
+	
+
+ <br>
+ 
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a18630aba29ba11f3a69f333218f4471',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/a18630aba29ba11f3a69f333218f4471/invoke.js"></scr' + 'ipt>');
+</script>
+ <script type="text/javascript">
+	atOptions = {
+		'key' : 'a18630aba29ba11f3a69f333218f4471',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/a18630aba29ba11f3a69f333218f4471/invoke.js"></scr' + 'ipt>');
+</script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a18630aba29ba11f3a69f333218f4471',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/a18630aba29ba11f3a69f333218f4471/invoke.js"></scr' + 'ipt>');
+</script>
+ <script type="text/javascript">
+	atOptions = {
+		'key' : 'a18630aba29ba11f3a69f333218f4471',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/a18630aba29ba11f3a69f333218f4471/invoke.js"></scr' + 'ipt>');
+</script>
+ 
+<br>
+
+
+        
+	
+ 
+
+
+</div></div>
+</div>
+</div>
+<div class="tabContent" id="tabContent2" style="display: none;"
+style="height: 350px; overflow-y: scroll; background-color: transparent;">
+  <iframe <a href="go:movar"> width="100%" height="800px" frameborder="0"></iframe>
+</div>
+
+</div>
+  </div>
+  </div>
+</div>
+    
+
+
+
+    <div class="tabContent" id="tabContent3" style="display: none;">
+  <div>
+    <!-- محتوى التبويب 3 -->
+    
+
+  </div>
+  
+  
+   
+ 
+  
+
+<head>
+<style>
+body {
+  background-color:#192535;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align: center;"><strong><span style="color: #192535;"> </span></strong></h2>
+
+
+    <center><a href="go:mov">
+<img border="0"  src="https://f.top4top.io/p_2895viyxa1.jpg" width="100%" height="100%">
+</a>
+
+     <center><a href="go:movar">
+<img border="0"  src="https://j.top4top.io/p_2895b5hln1.jpg" width="100%" height="100%">
+</a>
+
+</body>
+</html>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+   $(document).ready(function() {
+      $('.slider').slick({
+        autoplay: true,
+        dots: true,
+        arrows: false
+      });
+
+      $('#menuButton').click(function() {
+        $('#sidebar').toggleClass('active');
+      });
+    });
+    $(document).ready(function(){
+      $('.tab').on('click', function(){
+        $('.tab').removeClass('active');
+        $(this).addClass('active');
+        document.addEventListener('DOMContentLoaded', function() {
+         
+        function toggleMenu() {
+      var menuContent = document.getElementById("menu-content");
+      menuContent.style.display = (menuContent.style.display === "block") ? "none" : "block";
+      var menuIcon = document.getElementsByClassName("menu-icon")[0@CCORCH@;
+      menuIcon.classList.toggle("active");
+    }
+         
+      // الحصول على الرابط الخاص بـ "references"
+      var referencesLink = document.querySelector("a[href='go:LM");
+
+      // الحصول على العنصر الذي يحتوي على "matches"
+      var matchesTab = document.getElementById("tabContent2");
+
+      // عند النقر على الرابط "references"
+      referencesLink.addEventListener('click', function(event) {
+        event.preventDefault(); // منع السلوك الافتراضي للرابط
+
+        // إظهار قسم "matches" وإخفاء القسمات الأخرى
+        document.querySelectorAll(".tabContent").forEach(function(tab) {
+          tab.style.display = "none";
+        });
+        matchesTab.style.display = "block";
+      });
+    });
+      });
+    });
+    function closeSidebar() {
+  // قم بتنفيذ الإجراءات اللازمة لإغلاق الشريط الجانبي
+}
+
+
+    function changeTab(tabIndex) {
+  var tabs = document.getElementsByClassName("tabContent");
+  for (var i = 0; i < tabs.length; i++) {
+    if (i === tabIndex) {
+      tabs[i@CCORCH@.style.display = "block";
+    } else {
+      tabs[i@CCORCH@.style.display = "none";
+    }
+    
+  }
+}
+
+
+  </script>
+  
+
+
+  
+
+  
+</body>
+</html>
+
+
+    
