@@ -1,0 +1,925 @@
+<!----------  اكواد استايل القنوات  ------------>
+<style type="text/css">
+.grid-container {
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 5px 5px;
+padding: 0px;
+}
+.grid1-container {
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(1, 1fr);
+grid-gap: 10px;
+
+color: green;
+padding: 40px;
+
+
+
+}
+h1 {
+text-align: center;
+margin-top: 0px;
+
+
+
+}
+
+h2 {
+text-align: center;
+
+
+
+margin-top: 5%;
+font-size: 30px;
+color: #4A00B3;
+border-radius: 10px 10px 10px 10px;
+height: 5%;
+width: 100%;
+}
+
+
+h3 {
+    color: #7100FF;
+    font-size: 6.4rem;
+    direction: rtl;
+background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E8ECFF, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+box-shadow: 0 20px 18px 0 rgba(0, 0, 25, 25);
+ padding: 50px;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    border-bottom: 40px double    #BB002E;
+border-left: 0px solid #1700FF;
+
+border-right: 0:px solid #1700FF;
+    border-radius: 0px 0px 79px 79px;
+}
+
+
+
+button {
+  background-image: linear-gradient(to right, #9C9689, #DED8CC, #F3EDEA, #FDFDFC, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #FDFDFC, #F3EDEA, #DED8CC, #9C9689);padding: 15px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+
+
+margin:20px 10px;
+height: 400px;
+width: 265px;
+ 
+ border-bottom: 15px groove   #000;
+  border-top: 10px groove rgba(0, 0, 0, 1);
+border-left: 0px ridge rgb(255 0 0 / 100%);
+border-right: 0px ridge #f1f8e9;
+border-radius: 55px 55px 55px 55px;
+bord-radius: 20px 80px 20px 50px;" 
+
+
+
+
+} 
+
+} 
+
+.button {
+text-align: center;
+}
+ {
+display: block;
+}
+    button:active {
+     border-left: 0px solid rgb(255 213 105 / 80%);
+
+border-right: 0px solid #000BFF;
+
+border-top: 15px double  rgb(255 0 2 / 50%);
+border-bottom: 10px groove rgb(255 219 97 / 100%);
+
+    }
+
+
+</style>
+
+<!----------  اكواد استايل التطبيق شامل  ------------>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+body {
+padding: 0;
+margin: 0;
+user-select: none;
+list-style: none;
+background-image: linear-gradient(to right, #D4DBFF, #fff, #D4DBFF, #D4DBFF, #fff, #D4DBFF, #D4DBFF, #fff, #D4DBFF, #D4DBFF, #fff, #D4DBFF, #D4DBFF, #fff, #D4DBFF);
+      background-size: cover;
+font-weight: 500;
+font-size: 16px;
+text-align: right;
+margin: auto;
+/* position: relative; */
+direction: ltr;
+
+/**  تغير  خلفيه التطبيق **/
+/**  تغير  خلفيه التطبيق **/
+}
+
+
+header {
+/**  تغير الون خلفيه اللوجو   **/
+    color: #3545FF;
+    font-size: 0.2rem;
+    direction: rtl;
+    background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E1D7CD, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+
+/**  تغير الون خلفيه اللوجو   **/
+
+ 
+   font-size: 0.2rem;
+    direction: rtl;
+    
+
+/**  تغير الون خلفيه اللوجو   **/
+
+ 
+   padding: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    border-bottom: 0px solid #0001FF;
+    border-radius: 0px 0px 25px 25px;
+padding: 0px;
+
+margin-bottom: 0px;
+position: fixed;
+font-size: 1px;
+top:0;
+height: 5%;
+width: 100%;
+
+}
+
+
+
+
+
+
+#page:hover {
+background: none;
+}
+#page {
+margin-top: 90px;
+width: 100%;
+}
+
+.popup 
+{
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E1D7CD, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+  padding: 10px;
+
+z-index: 9999;
+text-align: center;
+align-items: center; 
+border-bottom: 5px groove  #9C9689;
+   border-top: 5px ridge  #fff;
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+border-radius: 80px 80px 80px 80px;
+} 
+
+
+h5 {
+
+    color: #721ACF;
+font-weight: bold;
+    font-size: 2.0rem;
+    direction: rtl;
+margin:60px;
+margin-top: -80%;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+    border-bottom: 5px ridge rgb(233 30 99 / 100%);
+
+    border-radius: 200px 200px 390px 390px;
+padding: 15px;
+}
+
+
+
+.popup button 
+{ 
+
+background-image: linear-gradient(to right, #7D796E, #F3EDEA, #FDFDFC, #DED8CC, #E1D7CD, #E8E2D7, #E8E2D7, #FDFDFC, #FDFDFC, #FDFDFC);
+border-color: #5A00E9;
+padding: 0px;
+text-align: center;
+        text-decoration: none;
+        text-align: center;
+color: #721ACF;
+font-size: 40px;
+font-weight: bold;
+margin:20px;
+max-width: 100%;
+height: 100%;
+height: 95px;
+width: 400px;
+border-bottom: 10px groove  #9C9689;
+   border-top: 9px groove  #fff;
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+border-radius: 50px 50px 50px 50px;
+}
+.popup img
+{
+max-width: 100%;
+height: auto;
+margin-bottom: 10px;
+max-height: 150px; 
+}
+
+.empty-space 
+
+{
+background-color: rgba(0, 0, 0, 0.0);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 9999;
+display: none; }
+
+</style>
+
+</head> 
+
+<header>
+
+
+
+
+
+
+<div class="empty-space" onclick="hidePopup()"></div>
+
+<div class="empty-space" onclick="hidePopup()"></div>
+
+
+<div id="popup" class="popup"> <h5>جودات قنوات BEIN SPORT</h5> 
+<button onclick="window.open('go:bein0')">عرض جميع الجودات</button> 
+<button onclick="window.open('go:beinhd')"> جــودة عـاليـة</button> 
+<button onclick="window.open('go:beinsd')"> جــودة متوسطة</button> 
+<button onclick="window.open('go:beinlow')">  جــودة ضعيفة</button> 
+
+
+
+
+
+
+</div> 
+
+
+
+
+
+
+
+
+
+<div id="popup2" class="popup"> <h2>راديو القنوات الرياضية</h2> 
+<button onclick="window.open('go:radiolow')"> راديو الانترنت الضعيف</button> 
+<button onclick="window.open('go:radiohd')">راديو الانترنت القوي</button>
+<button onclick="window.open('go:radiobein')"> عرض جميع الجودات</button> 
+
+
+
+
+
+
+
+</div> 
+
+
+
+
+
+
+<div id="popup3" class="popup"> <h2>للانترنت القوي</h2> 
+<button onclick="window.open('go:radioPr1')"> جودة عالية 1</button> 
+<button onclick="window.open('go:radioPr2')">   جودة عالية 2</button>
+<button onclick="window.open('go:radioP1')">  جودة عالية 3</button> 
+<button onclick="window.open( 'go:radioP2' )">  جودة عالية 4</button> 
+<button onclick="window.open('go:radioP3')">  جودة عالية 5</button> 
+<button onclick="window.open('go:P1')">  جودة عالية 6</button> 
+<button onclick="window.open('go:Live7')">  جودة عالية 7</button> 
+
+
+</div> 
+
+
+
+
+
+</div> <div id="popup4" class="popup"> <h2>SSC SPORT 4</h2> 
+
+<button onclick="window.open('go:Ssc4web')"> جودة متعددة</button> 
+<button onclick="window.open('go:SSC4s')">  جودة متوسطة </button> 
+<button onclick="window.open('go:SSC4live')">  جودة متوسطة </button> 
+
+</div> 
+
+
+
+
+
+<div id="popup5" class="popup"> <h2>SSC SPORT 5</h2> 
+<button onclick="window.open('go:Ssc5web')"> جودة متعددة</button> 
+<button onclick="window.open('go:SSC5s')">  جودة متوسطة </button> 
+<button onclick="window.open('go:SSC5live')">  جودة متوسطة </button> 
+
+
+</div> 
+
+
+<div id="popup6" class="popup"> <h2>SSC EXTRA 1 </h2>
+
+<button onclick="window.open( 'go:WebSsc6' )"> H  جودة متعددة</button> 
+<button onclick="window.open('go:Ssc2web')"> جودة متعددة</button> 
+<button onclick="window.open('go:SSC1lextra')">  جودة متوسطة 2</button> 
+<button onclick="window.open('go:SSCEXTRA1l')">  جودة متوسطة 7</button> 
+<button onclick="window.open('go:SSCEXTRA1s')">  جودة متوسطة 7</button> 
+<button onclick="window.open('go:SSC1lextra')">  جودة متوسطة 7</button> 
+
+</div> 
+
+
+
+
+<div id="popup7" class="popup"> <h2>SSC EXTRA 2 </h2>
+
+<button onclick="window.open( 'go:WebSsc6' )"> H  جودة متعددة</button> 
+<button onclick="window.open('go:SSC1lextra')">  جودة متوسطة 2</button> 
+<button onclick="window.open('go:SSCextra2l')">  جودة متوسطة 7</button> 
+<button onclick="window.open('go:SSCextra2s')">  جودة متوسطة 7</button> 
+<button onclick="window.open('go:SSC2lextra')">  جودة متوسطة 7</button> 
+
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+<div id="popup8" class="popup"> <h2>BEIN SPORT </h2> 
+ </div> </div>
+<script> function showPopup(adType) { if (adType === 'ADPRE1')
+{ document.getElementById("popup").style.display = "block"; } else if (adType === 'ADPRE2') { document.getElementById("popup2").style.display = "block"; } else if (adType === 'ADPRE3') { document.getElementById("popup3").style.display = "block"; } else if (adType === 'ADPRE4') { document.getElementById("popup4").style.display = "block"; } else if (adType === 'ADPRE5') { document.getElementById("popup5").style.display = "block"; } else if (adType === 'ADPRE6') { document.getElementById("popup6").style.display = "block"; } else if (adType === 'ADPRE7') {  document.getElementById("popup7").style.display = "block"; } document.querySelector('.empty-space').style.display = 'block'; } function hidePopup() { document.getElementById("popup").style.display = "none"; document.getElementById("popup2").style.display = "none"; document.getElementById("popup3").style.display = "none"; document.getElementById("popup4").style.display = "none"; document.getElementById("popup5").style.display = "none"; document.getElementById("popup6").style.display = "none"; document.getElementById("popup7").style.display = "none"; document.getElementById("popup8").style.display = "none"; document.querySelector('.empty-space').style.display = 'none'; } </script> </
+body> </html> 
+
+
+
+</style>
+
+<!----------  اكواد استايل القائمة  ------------>
+
+.
+
+
+
+
+
+    
+
+
+<!--- اسم القسم --->
+<style>
+
+
+    
+
+
+</style>
+
+<!----------  اكواد استايل التطبيق شامل  ------------>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+body {
+
+
+/**  تغير  خلفيه التطبيق **/
+background-image: linear-gradient(to right, #E8E2D7, #E8E2D7, #E8E2D7, #E8E2D7, #E8E2D7, #E8E2D7, #E8E2D7, #E8E2D7, #E8E2D7, #E8E2D7);
+   /**  تغير  خلفيه التطبيق **/
+}
+
+
+
+
+
+
+
+#page:hover {
+background: none;
+}
+#page {
+margin-top: 100px;
+width: 100%;
+}
+
+
+
+</style>
+
+<!----------  اكواد استايل القائمة  ------------>
+
+
+
+<!--- اسم القسم --->
+<style>
+    .btn { background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E8ECFF, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);padding: 25px;
+box-shadow: 0 0px 25px  rgba(187, 0, 0, 5);
+   border-top: 10px groove  #FF0052;
+border-left:0px ridge  #6D42B8;
+border-right:0px groove  #6D42B8;
+border-bottom: 10px groove  #0012FF; padding: 25px;
+border-radius: 50px 50px 50px 50px;margin-top: 15%;
+  display: flex;      
+        color: #0046FF;
+        font-size: 200px;
+        
+    
+ 
+        
+        font-weight: bold;
+        text-align: center;
+        padding: 2px;
+        display: flex;
+        justify-content: center; /* توسيط العنصر في وسط الخلفية *
+        
+        
+
+
+        display: flex;
+        justify-content: center; /* توسيط العنصر في وسط الخلفية */
+        color: #FF001C;
+        font-size: 50px;
+        
+max-width: 100%;
+
+
+      height: auto;
+    
+
+
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-align: center;
+       border-radius: 100px;
+        margin: 0px;
+            padding: 10px; /* اختياري: إضافة تباعد داخلي للعنصر */
+
+
+    }
+
+
+.colorاحمر {
+  color: #FF0035;
+}
+
+
+.color2 {
+  color: #FF0035;
+}
+
+
+.color3 {
+  color: #1d7d99;
+}
+
+
+.color4 {
+  color: #9D856C;
+}
+
+.colorازرق {
+  color: #002DFF;
+}
+
+
+.colorبنفسجي {
+  color: #CD00FF;
+}
+
+    .colorخياري {
+  color: #2290B1;
+}
+
+
+
+.colorذهبي {
+  color: #FFBA00;
+}
+
+
+
+.colorاخضر {
+  color: #008215;
+}
+        
+
+
+.colorحقي {
+  color: #E6EAFF;
+}
+
+
+
+.colorفضي {
+  color: #593289،;
+}
+        
+
+
+.colorاسود {
+  color: #000;
+}
+
+
+.colorad {
+  color: #FFD000;
+}
+        
+
+
+.colorاسود {
+  color: #000;
+}
+
+.colorbein {
+  color: #593289;
+}
+
+
+.colorاخقوي {
+  color: #E1FF00;
+}
+
+
+.colorرمادي {
+  color: #8f8f8f;
+}
+
+.colorوردي {
+  color: #FF0088;
+}
+
+
+.colorsh2 {
+  color: #00CD9A;
+}
+
+.colorsh1 {
+  color: #00D358;
+}
+
+
+.colorsh3 {
+  color: #009AFF;
+}
+
+.colorشاهد2 {
+  color: #3EFFFF;
+}
+
+
+.colorkids{
+  color:#F8D800;
+}
+.colorحلو {
+  color:#c5cae9;
+}
+
+.colorحلوة {
+  color: #E1E6FF;
+}
+
+.colorاخبار {
+  color:#F86838;
+}
+
+.colorعربية {
+  color:#18F880;
+}
+
+
+.colorوياك {
+  color:#FF7F00;
+}
+
+
+.colorوياك2 {
+  color:#FFB872;
+}
+
+        .colorابيض {
+  color:#fff;
+}
+
+        
+
+</style>
+<br>
+ 
+  	
+<!-- /بداية كود شريط اخباري-->
+		
+
+    
+   
+	<!-- /نهاية كود الشريط الاخباري-->
+
+
+<div class="row">
+    <center><h3> <div class="matchesTtl">
+            <a href="go:Jedwal" class="btn yesterday">
+<span class="colorذهبي">قنوات <span class="color2"> دولة  <span class="color3"> قطر  <span class="color4"></span>  </span>   
+ 
+            </a>
+            </h3></center>
+          
+
+        
+
+
+   
+
+    
+   
+   
+   
+	
+</header>
+<div id="page">
+<div class="grid1-container">
+<div align="center" class="button">
+<div id="buttons-list">
+	
+	
+	
+<!--- اقسام التطبيق --->
+	<br><br>
+	<section class="matchesHp">
+    <div class="ttl">
+   
+        <br><br><br><br><br><br><br>
+          
+
+
+<button onclick="window.open('go:qtar')">
+<img src=" https://qanawat.taghtia.com/assets/channels/qatar-tv.png " style="background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E8ECFF, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+box-shadow: 0 5px 25px  rgba(255, 13, 180, 5);
+   border-top: 10px ridge  #FF0DB4;
+border-left:0px ridge  #FF0DB4;
+border-right:0px groove  #FF0DB4;
+border-bottom: 10px groove  #FF0DB4;
+
+padding: 15px;
+border-radius: 39px 39px 39px 39px;margin-top: 15%;
+"  height="160px" width="160px" vspace="8px">
+
+  <h2 style="display: flex; /* استخدام Flexbox للعناصر */
+    justify-content: center; /* توسيط العناصر أفقيًا */
+    align-items: center; /* توسيط العناصر عموديًا */
+
+border-bottom: 5px groove  #000; 
+    border-top: 3px groove  rgba(0, 100, 100, 10);;
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+border-radius: 51px 50px 50px 51px;
+max-width: 80%; 
+height: 15%;
+width: 80%; 
+color: rgb(25 216 205  / 100%);
+;background-image: linear-gradient(to right, #9C9689, #DED8CC, #F3EDEA, #FDFDFC, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #FDFDFC, #F3EDEA, #DED8CC, #9C9689);
+         box-shadow: 0 7px 10px  rgba(0, 0, 100, 5);
+  
+
+;margin-top: 10%;
+margin-left: 12%;
+font-size: 25px;
+font-weight: bold;
+
+"><p><p><span class="colorوردي">قنوات  <span class="colorاسود">قطر <span class="colorاحمر"></span><span class="colorاحمر"></span></p></h2></
+</button>
+
+
+
+<button onclick="window.open(  '  https://qanawat.taghtia.com/api/player/qatar-tv-2 ' )">
+<img src="   https://qanawat.taghtia.com/assets/channels/qatar-tv-2.png " style="background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E8ECFF, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+box-shadow: 0 5px 25px  rgba(255, 13, 180, 5);
+   border-top: 10px ridge  #FF0DB4;
+border-left:0px ridge  #FF0DB4;
+border-right:0px groove  #FF0DB4;
+border-bottom: 10px groove  #FF0DB4;
+
+padding: 15px;
+border-radius: 39px 39px 39px 39px;margin-top: 15%;
+"  height="160px" width="160px" vspace="8px">
+
+  <h2 style="display: flex; /* استخدام Flexbox للعناصر */
+    justify-content: center; /* توسيط العناصر أفقيًا */
+    align-items: center; /* توسيط العناصر عموديًا */
+
+border-bottom: 5px groove  #000; 
+    border-top: 3px groove  rgba(0, 100, 100, 10);;
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+border-radius: 51px 50px 50px 51px;
+max-width: 80%; 
+height: 15%;
+width: 80%; 
+color: rgb(25 216 205  / 100%);
+;background-image: linear-gradient(to right, #9C9689, #DED8CC, #F3EDEA, #FDFDFC, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #FDFDFC, #F3EDEA, #DED8CC, #9C9689);
+         box-shadow: 0 7px 10px  rgba(0, 0, 100, 5);
+  
+
+;margin-top: 10%;
+margin-left: 12%;
+font-size: 25px;
+font-weight: bold;
+
+"><p><p><span class="colorوردي">قنوات  <span class="colorاسود">قطر 2<span class="colorاحمر"></span><span class="colorاحمر"></span></p></h2></
+</button>
+
+<button onclick="window.open('go:aray' )">
+<img src="  https://www9.0zz0.com/2023/05/31/02/856440375.jpg  " style="background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E8ECFF, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+box-shadow: 0 5px 25px  rgba(255, 13, 180, 5);
+   border-top: 10px ridge  #FF0DB4;
+border-left:0px ridge  #FF0DB4;
+border-right:0px groove  #FF0DB4;
+border-bottom: 10px groove  #FF0DB4;
+
+padding: 15px;
+border-radius: 39px 39px 39px 39px;margin-top: 15%;
+"  height="160px" width="160px" vspace="8px">
+
+  <h2 style="display: flex; /* استخدام Flexbox للعناصر */
+    justify-content: center; /* توسيط العناصر أفقيًا */
+    align-items: center; /* توسيط العناصر عموديًا */
+
+border-bottom: 5px groove  #000; 
+    border-top: 3px groove  rgba(0, 100, 100, 10);;
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+border-radius: 51px 50px 50px 51px;
+max-width: 80%; 
+height: 15%;
+width: 80%; 
+color: rgb(25 216 205  / 100%);
+;background-image: linear-gradient(to right, #9C9689, #DED8CC, #F3EDEA, #FDFDFC, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #FDFDFC, #F3EDEA, #DED8CC, #9C9689);
+         box-shadow: 0 7px 10px  rgba(0, 0, 100, 5);
+  
+
+;margin-top: 10%;
+margin-left: 12%;
+font-size: 25px;
+font-weight: bold;
+
+"><p><p><span class="colorوردي">قنوات  <span class="colorاسود">الراي<span class="colorاحمر"></span><span class="colorاحمر"></span></p></h2></
+</button>
+
+    <button onclick="window.open(  '  https://qanawat.taghtia.com/api/player/al-rayyan ' )">
+<img src="   https://qanawat.taghtia.com/assets/channels/al-rayyan.png " style="background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E8ECFF, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+box-shadow: 0 5px 25px  rgba(255, 13, 180, 5);
+   border-top: 10px ridge  #FF0DB4;
+border-left:0px ridge  #FF0DB4;
+border-right:0px groove  #FF0DB4;
+border-bottom: 10px groove  #FF0DB4;
+
+padding: 15px;
+border-radius: 39px 39px 39px 39px;margin-top: 15%;
+"  height="160px" width="160px" vspace="8px">
+
+  <h2 style="display: flex; /* استخدام Flexbox للعناصر */
+    justify-content: center; /* توسيط العناصر أفقيًا */
+    align-items: center; /* توسيط العناصر عموديًا */
+
+border-bottom: 5px groove  #000; 
+    border-top: 3px groove  rgba(0, 100, 100, 10);;
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+border-radius: 51px 50px 50px 51px;
+max-width: 80%; 
+height: 15%;
+width: 80%; 
+color: rgb(25 216 205  / 100%);
+;background-image: linear-gradient(to right, #9C9689, #DED8CC, #F3EDEA, #FDFDFC, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #FDFDFC, #F3EDEA, #DED8CC, #9C9689);
+         box-shadow: 0 7px 10px  rgba(0, 0, 100, 5);
+  
+
+;margin-top: 10%;
+margin-left: 12%;
+font-size: 25px;
+font-weight: bold;
+
+"><p><p><span class="colorوردي">قنوات  <span class="colorاسود">الريان<span class="colorاحمر"></span><span class="colorاحمر"></span></p></h2></h2>
+
+</button>
+
+
+
+    
+
+<button onclick="window.open('go:ARABI')"> <img src="           data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDADIiJSwlHzIsKSw4NTI7S31RS0VFS5ltc1p9tZ++u7Kfr6zI4f/zyNT/16yv+v/9////////wfD/////////////2wBDATU4OEtCS5NRUZP/zq/O////////////////////////////////////////////////////////////////////wAARCABkAGUDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAECAwQF/8QAKxAAAgECBgAFBAMBAAAAAAAAAAECAxEEEiExQVEiMjNhcRNCgaEFFFKR/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//EABsRAQEBAAMBAQAAAAAAAAAAAAABEQIhMRJB/9oADAMBAAIRAxEAPwD1AAAAAAXK7ysUqyySi1swNbi5Sm80bvklxa2AsCqlwywAAAAAAAIfSAm4IyoZfdgQvU/BXEK9O/TLKDUr3/RFb0mL4T0pTjOHg2Wlujn/ALcqVeUK0bRvo+kYurKhWU15JaSR11KdPFUk00/8yXAnjeZ61WWaummuGiLNbao82NStg55Htvbhno0q0K0bwd7brlFS8cWTuSVnpZr8lk7kZAAAKzvuixDaARd1cpKrlk1KL9rEKShP2ZepBTjbngUiFWg+bfJSvNNJRad97CjGOqkle+zMJepJJctGe7GupVKsc1NrngzwuJdGVn5G9fb3OpUpv7X+TN/x8pTbc0k+lcvBvZ5XVVpU8RBZtVumjzJRq4WrfVPh8M3w9d4eo6M34E2rvg7atKNaGWauuPY14zvz1+MsPio1o5ZWjPrv4NoPhnmywlSNTK7W4l2ehSTUVmbb7YZ5ZvTQAEQKZY1FJSV09C0tislL6MlHzWdvko8h2u8u3B34Gu5x+nLeK0faOJUqjqZFF5uj0MNhFReaTzT/AEjfLMZjSrTzq63RzQyxqx4d0bYrEKjCyfje3scFGlUrTzJvfzMxOG9tfX49YFKUHCNnJyfbdyakPqQcbtX5RB5uNlCWIbg76a/JtgcQ7qjLVfazGrg6tNqyzp7NHbhcMqEddZvdmnS2Y2klJWZCunZkykoq7Kwu3dkclwARRq6KKTi7S2LkSjdASZ16qo08z1eyXbCbho9jDK6lZTm9np7FkTWMKMqs3Urc8HXh5wbcIpK3RGKsoJrRtnHRq5K8ZX8OzL3Utx24uc4UW4fDfRz4XEyTyTbku+Uds4qcHF7NWPNpwcMTklutBEu69NNNXQMo3htt0TJuei25JjWnqSvwtjRKxEVZEkUAAAAARJaFPDls+DQhxTA5Y0nU8NSTV+i8cFSW+aXyzZw6K2n/AK/RUxolZJI569K9anUXGjNMkn9z/wCkqD5bfyD1ZLQmwBFAAAAAAAAAAAAAAAAAAAAAAAAf/9k=" style="background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E8ECFF, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+box-shadow: 0 5px 25px  rgba(255, 13, 180, 5);
+   border-top: 10px ridge  #FF0DB4;
+border-left:0px ridge  #FF0DB4;
+border-right:0px groove  #FF0DB4;
+border-bottom: 10px groove  #FF0DB4;
+
+padding: 15px;
+border-radius: 39px 39px 39px 39px;margin-top: 15%;
+"  height="160px" width="160px" vspace="8px">
+
+  <h2 style="display: flex; /* استخدام Flexbox للعناصر */
+    justify-content: center; /* توسيط العناصر أفقيًا */
+    align-items: center; /* توسيط العناصر عموديًا */
+
+border-bottom: 5px groove  #000; 
+    border-top: 3px groove  rgba(0, 100, 100, 10);;
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+border-radius: 51px 50px 50px 51px;
+max-width: 80%; 
+height: 15%;
+width: 80%; 
+color: rgb(25 216 205  / 100%);
+;background-image: linear-gradient(to right, #9C9689, #DED8CC, #F3EDEA, #FDFDFC, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #FDFDFC, #F3EDEA, #DED8CC, #9C9689);
+         box-shadow: 0 7px 10px  rgba(0, 0, 100, 5);
+  
+
+;margin-top: 10%;
+margin-left: 12%;
+font-size: 25px;
+font-weight: bold;
+
+"><p><p><span class="colorوردي">قنوات  <span class="colorاسود">العربي<span class="colorاحمر"></span><span class="colorاحمر"></span></p></h2></h2>
+
+</button>
+
+	
+	
+	<button onclick="window.open('go:jazirah')"> <img src="  data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABUOEBIQDRUSERIYFhUZHzQiHx0dH0AuMCY0TENQT0tDSUhUXnlmVFlyWkhJaY9qcnyAh4iHUWWUn5ODnXmEh4L/2wBDARYYGB8cHz4iIj6CVklWgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoL/wAARCABXADQDASIAAhEBAxEB/8QAGgABAAMBAQEAAAAAAAAAAAAAAAEDBAUCBv/EAC8QAAIBAwMBBgUEAwAAAAAAAAECAwAEERIhMUEFEyJRccEyYZGx8BQzgaFCUtH/xAAYAQADAQEAAAAAAAAAAAAAAAAAAgMBBP/EACgRAAICAQMCBQUBAAAAAAAAAAABAhESAyExQfATMmGBsZGhwdHh8f/aAAwDAQACEQMRAD8A+wpSlACq4XMimTPhJ8IHkDz/ADVlY7GRY2e0OzRk6c9RSSlUkmalszZSlKcwUpSgBSlRIGMbBCA2DgnoaAKXvIkuRAdWo4GcbZPFZXhaSH9RFlbhGbIU568VmlGiFxKC9wTktqyUG3JrTIHtrmW4j3jD4dfPIBz9TXC5ud5cfH+UWxrg12lwtxEGBGofEPI1dXOc9w63kBJikOZF5x+feugjK6BlOVIyDXTpzb2fK7snJVuiaUpVRSHdY0LucKOTWIST3u0WYYf9/wDI1Mym7vO5P7UW7YPJ/Per4pIyXIcAR7aeAoG3t9Kg25yrp8j8L1M0sUULpboMJ+5KSM5A86u7P1GBpGGO8cuBWQq00eSAJLp+vRB+fzW14mfTCPDAFGcHdvl6VPT82SXfe/uNLimUxRpFcNCDmCdSV369QP4paE29w1oxyp8UZJ6eX586z3tzi5RYBvECowOp22r1pdrAOMiaBiSTz5n7/wBUimlJqPTtr5NrbfqdOlRG4kjVxwwyM0ru5InPWdLNrhnUmR5ThflyPvVs86y2LNDs0p042yTxj6VTeiOO/WSSMumnLY8+N/6rxAVnuCUXQneqwA6YB/5XDk03p+39LUmsjVctFbPC7A6Y1IUA752H2zSO8RbaOWY41sQMdNzVF8qyXZYgusUYLKPXj6HNaZ2t/wBMJiiuqgFPYVRSllKnVd/gylSspZYrTXcP4pJCSgI4q3s5GNszS7mVixyOc1iRJLkvd3G6KM441Y6D5Vsa9H6LvypQtkKOd6XTlG8nsun7NknVDst9VmBj4WI9/elOy002gOfiYn29qVfRvw1ZOfmZZcnRJG7AGM5R89Acf1tUTokUcbppRVkDHAwN9ver3UOhVhkEYIrnv2UC3glIXyK5xS6ikrxV2bGurFvc6VubpxkMwCjgnHT6YqmeJMwrG7COd9Wkj4enuavYZ7PMVtF4g2l1OCQevr61BIftSFTpJRMNjgHBO1c8laUX6fd7lFzZ4HahEYVYQCBgeLYVTHDPeONtMe+DjCr6V1VfVMUaI5XcPjw/Xzq2q+C5+aVr6C5pcIhVCqFUYAGAKVNK6iQpSlAGa5tO9bvInMcuMZHX1quxsTA5kkIZ+ABwKUqXhQyyrcbJ1RtpSlVFFKUoA//Z  " style="background-image: linear-gradient(to right, #9C9689, #FDFDFC, #F3EDEA, #DED8CC, #E8ECFF, #E8E2D7, #E8E2D7, #F3EDEA, #FDFDFC, #9C9689);
+box-shadow: 0 5px 25px  rgba(255, 13, 180, 5);
+   border-top: 10px ridge  #FF0DB4;
+border-left:0px ridge  #FF0DB4;
+border-right:0px groove  #FF0DB4;
+border-bottom: 10px groove  #FF0DB4;
+
+padding: 15px;
+border-radius: 39px 39px 39px 39px;margin-top: 15%;
+"  height="160px" width="160px" vspace="8px">
+
+  <h2 style="display: flex; /* استخدام Flexbox للعناصر */
+    justify-content: center; /* توسيط العناصر أفقيًا */
+    align-items: center; /* توسيط العناصر عموديًا */
+
+border-bottom: 5px groove  #000; 
+    border-top: 3px groove  rgba(0, 100, 100, 10);;
+border-left: 0px ridge #000;
+border-right: 0px groove #fff;
+border-radius: 51px 50px 50px 51px;
+max-width: 80%; 
+height: 15%;
+width: 80%; 
+color: rgb(25 216 205  / 100%);
+;background-image: linear-gradient(to right, #9C9689, #DED8CC, #F3EDEA, #FDFDFC, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,#fff, #fff, #fff, #fff, #fff, #FDFDFC, #F3EDEA, #DED8CC, #9C9689);
+         box-shadow: 0 7px 10px  rgba(0, 0, 100, 5);
+  
+
+;margin-top: 10%;
+margin-left: 12%;
+font-size: 25px;
+font-weight: bold;
+
+"><p><p><span class="colorوردي">قنوات  <span class="colorاسود">الجزيرة<span class="colorاحمر"></span><span class="colorاحمر"></span></p></h2></h2>
+
+</button>
+    

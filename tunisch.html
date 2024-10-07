@@ -1,0 +1,261 @@
+<!----------  اكواد استايل القنوات  ------------>
+<style type="text/css">
+.grid-container {
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 5px 5px;
+padding: 10px;
+}
+.grid1-container {
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(1, 1fr);
+grid-gap: 10px;
+
+color: black;
+padding: 4px;
+}
+h1 {
+text-align: center;
+margin-top: 1px;
+font-weight: bold;
+font-family: "Readex Pro", sans-serif;
+
+}
+
+h2 {
+text-align: center;
+margin-top: 0px;
+font-size: 12px;
+color: #000;
+font-family: "Readex Pro", sans-serif;
+font-weight: bold;
+}
+
+button {
+
+border-radius: 20px;
+background-image: linear-gradient(to right, #8A96D5, #fff , #fff, #fff , #fff, #fff , #fff, #fff, #fff, #fff , #fff, #8A96D5  );  padding: 2px;
+border-color: #000;
+padding: -5px;
+margin:8px 3px;
+height: 160px;
+width: 115px;
+} 
+
+.button {
+text-align: center;
+}
+ {
+display: block;
+}
+
+
+</style>
+
+<!----------  اكواد استايل التطبيق شامل  ------------>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+body {
+padding: 0;
+margin: 0;
+user-select: none;
+list-style: none;
+background-image: linear-gradient(to right, #8A96D5, #D4DBFF , #D4DBFF , #D4DBFF, #D4DBFF , #D4DBFF, #D4DBFF , #D4DBFF , #D4DBFF, #D4DBFF);  padding: 2px;
+background-size: cover;
+font-weight: 500;
+font-size: 16px;
+text-align: right;
+margin: auto;
+/* position: relative; */
+direction: ltr;
+
+/**  تغير  خلفيه التطبيق **/
+background-image: linear-gradient(to right, #D4DBFF, #D4DBFF , #D4DBFF , #D4DBFF, #D4DBFF , #D4DBFF, #D4DBFF , #D4DBFF , #D4DBFF, #D4DBFF);  padding: 2px;
+/**  تغير  خلفيه التطبيق **/
+}
+
+
+
+
+
+
+
+#page:hover {
+background: none;
+}
+#page {
+margin-top: 10px;
+width: 100%;
+}
+
+
+
+
+
+</style>
+
+<!----------  اكواد استايل القائمة  ------------>
+
+.
+
+
+
+
+
+   
+</head>
+<body dir="rtl">
+<header>
+
+<hr>
+<!-- /بداية كود شريط اخباري-->
+		<div class="marque">
+        <marquee direction="right" onMouseOver="this.stop();" onMouseOut="this.start();" div class="gif"> <img width="90"  src="data:image/png;base64,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" align="absmiddle"/> 
+        </marquee>
+    </div>
+   <hr>
+    
+   
+	<!-- /نهاية كود الشريط الاخباري-->
+
+
+
+<!--- اسم القسم --->
+<style>
+
+
+    
+   
+
+
+    
+    
+
+    
+
+    .btn { background-image: linear-gradient(to right, #B1BEFF, #E8ECFF , #D4DBFF );  padding: 2px;
+display: flex;      
+        color: #FF1B00;
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        padding: 2px;
+        display: flex;
+        justify-content: center; /* توسيط العنصر في وسط الخلفية *
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 100px;
+        margin: 10px;
+    
+        
+        
+
+    }
+
+    .btn {
+        background-image: linear-gradient(to right, #B1BEFF, #E8ECFF, #D4DBFF);
+        padding: 2px;
+        display: flex;
+        justify-content: center; /* توسيط العنصر في وسط الخلفية */
+        color: #000;
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 100px;
+        margin: 10px;
+        border: 1px solid #fff; /* اختياري: إضافة حدود للعنصر */
+        padding: 9px; /* اختياري: إضافة تباعد داخلي للعنصر */
+        border-color: #1300FF; /* يمكنك تعديل القيمة هنا لتغيير لون الحواف */
+    }
+
+    
+        
+</style>
+  
+<section class="matchesHp">
+    <div class="ttl">
+        <div class="matchesTtl">
+            <a href="go:Jedwal" class="btn yesterday">
+<span>   مــجــمــوعــــة قـــنـــوات دولــــــة تــــــونـــــس</span>
+            </a>
+            
+         
+          
+	
+</header>
+<div id="page">
+<div class="grid1-container">
+<div align="center" class="button">
+<div id="buttons-list">
+	
+	
+	
+<!--- اقسام التطبيق --->
+	
+	
+	
+<button onclick="window.open(' go:t1')">
+<img src=" data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABwUFRkVEhwZFxkgHhwiK0cuKycnK1c+QjRHZ1tta2VbZGJygKSLcnmbe2JkjsKQm6mut7m3bonJ18ey1qS0t7D/2wBDAR4gICslK1QuLlSwdWR1sLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLD/wAARCABmAEoDASIAAhEBAxEB/8QAGgABAAMBAQEAAAAAAAAAAAAAAAMEBQIGAf/EADYQAAEDAgMEBQoHAAAAAAAAAAEAAgMEEQUSIRMxQVEUIjRCsSMzYXFzgaHB0eE1UmJjdJHw/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAIBAwT/xAAdEQEBAAIDAQEBAAAAAAAAAAAAAQIRAxIhIkFR/9oADAMBAAIRAxEAPwD0iIiAiIgIqc+JQQVDYnOvvzkX6v1VwEOALSCDqCOKbVcbPaIiIkREQEREBZuJ4j0cGGEgykWcfy6eKYniYpxsoHAzHedCG/deeJOpvqoyv8enh4t/WSUB80lgHPe4301JW5SuloKdnTHgMc7KL6lunPlp8Vegp4qduWGMMHG28+9Ucc7Gz2g8CmteqvLOWzDXjSRYeF4lsiIJ3eT3Nce76/QtxVLt5+TjuF1RERagUVUJjTSCnIEturdSojZdPGuDg4h4IcDrffdfN69FieGipaZYRaYcNwd9154ggkEWI3grlZp78M5nPGxhVVNVYk50z72idYDQDUKfHuxM9oPAqlgPbnn9s+IV3HuxM9oPAqvxxyknLJGACvRYOZzSna3yDzdwb2+nJUcLwzbWnnBEeha3Trev0LeADQA0AAaADgmM/Tn5JZ1ERFbyiIiAs7E8NFUNrCAJhv4Zh9Voolm1Y5XG7jBwJpbWShwIIYQQRqNQtmenjqAwSjM1rs1uBPp/tfRBG2oM7RZ7m2cef+spFkmlZ59su0ERFrmIiICp4m9gpdm6LamVwY1l7XPDX3K4oKqlZVNY17ntyOzAsNiCsqsbJZapUk8sDa7axRtfH5Uhl9SRfiTyCkkqGz01HLJEDnmbYZj1Tc6rifDo4o5JDLWSZgA5rHXc7hy1SLDYpGlu1q2NifZoc6wuOI0+Kz11vW/TkvqWYjWCliY9xyXc46DqrtlfUupyDHGajbGIAaAWF7qQYW1rnOFVVBzt5Emp+CHDWNgLWyTFweZA4PAcXW52TVO2FcdJkmpKyKeMMlijOaxuDcHcoaX8RpP4jfmlNhs0hmdUvniD7DKJQ4uFuJtqr8dFHHNHKHOzRxiMXOlh80LccdyLCIipwEREBfMw5oRcKMwA94oJM7eaZhzUPRv1lfRT27xQTXui5azLxXSAiIgIiICIiAiIgIiICIiD/9k=  " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>قناة الوطنية 1</h2>
+</button>
+
+
+
+     
+<button onclick="window.open(' go:t2')">
+<img src=" data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCABUAD0DASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAIDBQYE/8QALhAAAgICAAUDAQcFAAAAAAAAAQIAAwQREiExQVEFE2FxFCIyQoGR8CMkUmLB/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAEDAgT/xAAeEQACAgMBAAMAAAAAAAAAAAAAAQIREiExAxNBUf/aAAwDAQACEQMRAD8A6aIiAIiefJOUSq4yoD1LueX01Ktkbo9ESKFig4wA3cA7ElIUREQBETN9azLsapUqUrx8jZ4+B8/z6VK3RJPFWyy31THqyxjlvhn7KfH86SnL9ZWm5qqqw/DyLFu85+W42PZk3CqobY9+wHkz0fHFbZ5n6yekdNg5YzKPcC8JBII3vUuSxXd0BHEh0w8eJTi49eBileLkv3nY9z3MwHz7Pt75VR4STyB7jwf2mShk3RrKbglZ1ESvHsa2lLGQoWGyp7SyZmokLa0urauxQyMNEGTiAc5k+kX15QrpBet/wv2H1m1hYdeFTwJzJ5s2ubGemeXNzkwuE212FW6MoBG/HWaOUpaM1CMNmX6kmfm26FDrSp+6v/T8y/0r0v2iL8lf6g/Ch/L8n5mpU5srVyjJsb4W6iThzdUF5q8mIiJmaCUZGQMfRYLojkWcLz2OXP8Af9JfMz1DHtsvsZMRb+KrgViwHAefY/UTqKTezmTaWjRV1YAqwII2NHqPMosya1ahLl17oLcyCF4RvmZnUPk05Vf9spdKRTwe+uzrnuRGNl8OKtmCHWji2DYum3OsF+nGb+kbC30tWbFtQovVgw0P1kbslKlqbmwtcIpXn16H6TMsx7ghtOGioLQ5p41AAC63vpI465N61BccClcn3QwddKN8wB46xgulzfKNem1bgxUEcLFTvyDqWSjEretbA41u12H0J5S+cPp2uCIiQpD2qvc9z204/wDLQ346yWx5kHr4vzESH2f/AHMAtYKylWAII0Qe8KqooVQFUcgANASsUa/OZYq8I1vcAlERAEREAREQBERAEREA/9k= " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>قناة الوطنية 2</h2>
+</button>
+
+<button onclick="window.open('go:hana')">
+<img src="  data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDADIiJSwlHzIsKSw4NTI7S31RS0VFS5ltc1p9tZ++u7Kfr6zI4f/zyNT/16yv+v/9////////wfD/////////////2wBDATU4OEtCS5NRUZP/zq/O////////////////////////////////////////////////////////////////////wAARCABRAFEDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIDBAUB/8QANBAAAgIBAgQEAggHAQAAAAAAAQIAAxEEEhMhMUEFIlFhccEjMkNSgZGx0RQkQmNzkqGC/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAeEQEBAQEBAAIDAQAAAAAAAAAAARECIQMSIjEyQf/aAAwDAQACEQMRAD8A1Jx3VFLMQAOpMHda0LMcKOpmNfe97kscDsvpFavji9L1niNa8kUv79BK7eI3HOAg/CVYRa6J8fMX+Jbjnc2fYD9oC20fat+Q/aJQGtQEdByJMZ02jKtuHQkdpPrPJuGGpuUfWVviv7SRdaM+dCPdTmVczhMNo+saddiWruRgwjTKV2rbchwf1+M0qrBbWHXv/wAMuXWfXOHhCEaFLxOzbWqDPmOT+Ezpa8RYNqcD+lQDKsiuv4pnIlulKr6wWGGTqB3EqR6rDVYHHbt6wV1zbPEzaks21Rtr6ACT1psUtbyUjGDFc1acC6tNxfOD2Eir4mob1I6nsIMs2eeR21djkduo+ETMtFUevhBwzr0lM8iQeoisPm6My34c/mev18w+fylOS6RtuqTngHIhP2Op41YQhNHMx9W27VWH3x+XKQyXVLt1Vg98/nIpFd3H8wTs6iM+doztGT8JyJSzpHR80WgFWOVz2MNRcyk0ouxF5Y9ZWBwcwZixyxJPqY0fSbqRWKkMpwR0MlvdLVWwHD9GHzkIVuHvx5c4z7zkRWTdE7UcXIfRh+sWNUM2oPVh+sCrahCE0cjK8QXbqifvAH5fKRJXupsf7uJc8Tr8qWDscGV6QW0t4AyfL0+Mm/t1cdfhHNL9t/iaLRQbicEKq8yT2j6MBnsBOAayM+kemrhWhuNSV6EbuoiO9ZbhDplatnqtDheZGMRRUp0rW5O4Nj2k711ik11XVjc2SSw6dhOcNRpTVxqtxbP1uUML7oQv8oX3NyfGM8ukapaCBxLGyfQchJOGo0pq49W4tu68pF/D/wB6n/eA3d9LfUaX2nn3B9Z3SKH1VYPrn8ucbUYFFQ4isVyDhsyXwxM2M/YDHSGelevx1owhCW5i21rbWyN0MyM26S0geVv+ETZiW0pcm1xn37iKxfHWeVlvrLnUgkAEYOBIJes8NOfonHwaV20eoUE8PIHoQZOVvz3z/iGNlODjB4m7r7TvBtHWp/8AUzgptPStz/5MF7CTslXSXsMis/jyk9fhrk/SOAPQc4Ym9yKiqzsFUZJ6CbGmpFFIQdepPvCjT10DCDn949ZLKkYd9/YQhCNmIQhACBhCAEIQgBCEIAQhCAEIQgH/2Q==  " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>حنبعل</h2>
+</button>
+
+
+<button onclick="window.open(' go:nesmq')">
+<img src=" data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JYYF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA8ADgDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAUCBAYDAf/EADMQAAIBAwMBBQUHBQAAAAAAAAECAwAEEQUhMRITFEFRkSIyYXGBBlJyorHB0RUjNEJT/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAMEAQL/xAAfEQADAAICAgMAAAAAAAAAAAAAAQIDERIxBDITQYH/2gAMAwEAAhEDEQA/ANJUZZUhjLyMFUck1InAyazV9eteSkjaMe6v7n41zVaG4sfyMuT6y5YiCMBfN+TVf+pXn/b8o/iqYq7Y2Xew57QJ048M0rdNl3DFjnbRag1aTiaMEea7GmkciSoHRgynxFKraw7WEuZMYJGAM8Vxt7k20uRkofeHnWqmuxF45vfDtD2igHIyKKcRlPV5DFpkzLjJAX1OD+tZpDtWk1mMyaXOF5ADfQHJ/SsxG1KyFvjPSY+SxtbW0Et2CzHnc7HyGK8uraKOy7zZsyAgZAY+0Ca76z/gD8QrngvoGFBJ6fD8Va0ujmappU32/wAO2lnOn5+JpIz5p1pZ6dM6jsPaOaRVxXSHYfezR6a5ewiJ8sehxRRpqFNPhDckZ9TminT0Q5Pd6LJAIIPBrI6jZPp9zjmJiSh+Hl8611c54IriIxzIHQ+Boa2EW4ZnrrVmvIBEYgm+cg1Ox1N7VChXtE8ATjFSufs+6EtaS9Q+6/PrVZdK1Abd3/Ov80tqt7KprG54/RbutWkniMaIIwfe3zkeVcLG1a6nAwezG7n4VZttEdt7mQKPupufWnMUUcMYSJQqjgChS29sys0RPHGTAwMCiiimkZwvpJI7Y9kwV2ZUDEZxlgM4+tJZbybt4nkZXltnuFBxjq6U5IrQMquMMoYZBwRnccVBbeFZTKsSCQ8uFGT9aAFKXt+I5F642Zog8bOyKclgNgGO2+xPjUjdXj9MKSHtBIysCEEh2BGBnpOM74pklpbIjIlvEqvswCAA/Ojult2Yj7vF0A5C9AxnzxQAobUbm4jMlvcBFQRg/wBoe0WJBOCTjGK6QXt1Pcd0MwjKvInbFAS5XGwHHjk01FtABgQxgHH+o8OPTwqL2ls6lXt4mBYsQUBGTyfnQBDTbh7uwjnkC9TZz08bEj9qK7xxpEgSNFRRwFGBRQB//9k= " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>قناة نسمة</h2>
+</button>
+
+
+
+<button onclick="window.open(' go:zaytona')">
+<img src="   data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAA7AD0DASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAQUAAwYC/8QAMBAAAQQBAgUCAwgDAAAAAAAAAQACAwQRITEFEhNBUWHwIjJxBiMzQlKRofGBscH/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAwEC/8QAGxEBAQADAAMAAAAAAAAAAAAAAAECAzEREiH/2gAMAwEAAhEDEQA/ANKBhFDZFBFXNNHA0OleGNJDQT5XFu1HTgdNKcNGw8nwsjeuT8St5GdThjB2QbVBJuF2rUFbp2Gh2Pl11HoVY61LNMxnNu4aDQbqd2TkZ7Q2Q2RUVGgqrVmOpA6aU4aP5PhWnQFYvil2a5ZcZQWBpwGfpQd27UvFrrQfhaThrf0hM4II67A1gA8k7n6lKqzJKpimY6N/WBADstAxjOrsD03VpuWnyNb02RlzecdV3KCPIJIUtmOWV+cc2WmRlx8vjcjb6LirZrx3o2TPAO/oD2z4Sd1qxPzYe1gaOYgODdvrv9FXPVnquxNGWEHG4OuAe3oR+6zHX46SN4okn2cuzzxuhkBcyMfC/wAenv8Ap2rOkSfjXCG2musQg9YbgfmTdFBkDxB3QdUNZ/MG4+bUERlhOMbY1x/Kuu3IiYZJ68vWc15dhxY1pcwNIGW52APpncplxjhZmzZrZE4GoHcYwffs5l8krfu36Fo5cEaj3/0+SgYPkiM753uzFBD0WsZzEnLeUZcWgDc7+Nl00Tccs/hcjOqXOcNQ0ENGP2b/AJVFGC3xB4jBLoxgOcRkAa4/2VrKlWKpCIoQQ0a690EqVYqkIihBDRrr3VyByoggGEUO6h2QRKuK8GZbeJYsMkJHN4I7n3/bU7IoKKlSGnF04W4Hcncq7dFDvlAVyR4OF0gNkH//2Q==  " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>قناة زيتونة</h2>
+</button>
+
+
+
+
+<button onclick="window.open(' go:Elhewar')">
+<img src=" data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAB4UFhoWEx4aGBohHx4jLEowLCkpLFtBRDZKa15xb2leaGZ2haqQdn6hgGZolMqWobC1v8C/c47R4M+53qq7v7f/2wBDAR8hISwnLFcwMFe3emh6t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7e3t7f/wAARCABBAFQDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAMEAgUGAf/EADIQAAEDAgMFBgUFAQAAAAAAAAEAAgMEERIxUwUUIXGSEyIyUWHRFUFUkaIzNFLB8HP/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQMC/8QAHxEBAAIBBAMBAAAAAAAAAAAAAAERAgMSIUETMVFh/9oADAMBAAIRAxEAPwDokREBERAREQEREBERAREQEWv2o9zTHhcRnkVQ7WTUf91pGncWzy1Kmm/Rc/2smo/qK8M0uo/qKviTy/joUXOmaXUf1FSxx1MtO+ZsxDWXuC43UnTrtY1L6b1arbMYlqKON17OcWm3qWrXGebVf1FWI6ermhjkbUWD3YQC8j/ZJOFdrGdvG01DNFJLJJI3sgxrrCwHADy8wVDVOoGbOkhp3l73EEYmm+bfnYfIFXaWikknninqJQYsNsD87j1VOubJT09LIyomJmZidd+XAZfdTbzVrbo2eAckRvhHJFw6a7a3ii5FYV9MI3tEMZsRxtcrPa3ii5FSxVE8kLZMcIxPw2IPvn6LaJmMYlhNTlMIooIGUQmniJIzzvnZTGhgMrCIu5hN+8c+Fv7VauqZbvp3YCOHEAj181Dv9SB+p+ITblPK7sY4XmbPhsMUXHG6/eOVzb58lHLQwsiqXdnbCCWd4/x5+d1U+IVWr+I9ljJXVL2OY6S7XCxGEJty+m7H42Xw2kvbsTzxn3VWg2bcPFZEbcMPe++R5JQ173TEVMwwYTa4A48FU+JVmt+I9lKy9Orx9thsimmp+2MzMOO1uIN81Q2r+y2f/wAv6asTtSs1vxHsqk08sscbJHXbGLNFhwH+CsYzdyXFU6xvhHJEb4RyRYtHj42SWxsa62VxdY7vDox9IUiK3KVCLd4NGPpCbtBox9IUqJclQi3aDRj6Qm7QaMfSFKiXJUIt1p9CLoC83Wn0IugKZEuSkO6U308XQE3Om+nh6ApkS5UyREUBERAREQEREBERAREQEREH/9k= " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>قناة الحوار</h2>
+</button>
+
+
+<button onclick="window.open(' go:Essaida')">
+<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABgREhUSDxgVFBUbGhgdJDwnJCEhJEo1OCw8WE1cW1ZNVVNhbYt2YWeDaFNVeaV6g4+UnJ2cXnSrt6mXtYuZnJX/2wBDARobGyQgJEcnJ0eVZFVklZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZX/wAARCABOAE4DASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAEEAgMFBv/EADEQAAICAQMCBAMHBQEAAAAAAAECAAMRBBIhBTETQVFhInHRFDKBgpHB8BUjJDWhsv/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAcEQEBAQADAQEBAAAAAAAAAAAAARECEiEDQSL/2gAMAwEAAhEDEQA/APVREhnVfvMBn1MCYkblIyCMDzzJgIiICIiAiIgJrdGa1SGKgKQSMe3rNk0a62unR2taWCFdp2fe54495Lx7eG56jwnFj45VyAxPoAPL35EjV0WXUV1ptxvUuCe6juPf5HiU+l6vS3alxU+oLmsDFpGMDjjHn5/rJTr2kaxUK2rk43MAAPnzNcfleN8Ly2ettGhsqeiwuGZEAbPqFAABxnb3Pz5m2jTGvW3XGqpA/AKNyec5Ix3Prn6nJ9bWmvr0ZV/EddwIHGOfpIGvqOst0u199Sb2OBjHH1l/qp4sxKDdX066JdUUt2M+wDAzn9faa9Xfamt1CK7BV0bOAPJs9460104lPpNr3dNqssYs5zkn5mXJLMuKTnddRn6axUZ2sGPynRiJcul9cJNdXquqfbK0fwqKCXyBnjPv7zR1bqtGu0q1VLYGD7viAx2Pv7z0kAg5wQccTc5zdxnK83b1Sh+s06wLZ4aV7SMDOfi9/eYjqdP9T1Op2vstq2KMDOcDvz7TtWpqbnY6fXIqnaygIGwvP/D3/CXJe8n4mV499VW3Sq9KA29bd5PljB+s6X2tNdqNXdUrhF0bKdw853oi/SX8Xqo9E/1NH5v/AEZeiJzt261CYPatb1oc5sbaMfIn9pnMLakuUK4PByCCQQfYjkSCo+vcpYK6bCyiwAitiNynAHA84a3wrlU1WHFxJIqY4G08ggeuB+MuVotaBEGAJlNbExS0COhXcjL/AI1S8jHI3ZEwt1Bd6bwjCsorIShOdx5BI7cY/gnQlcaKhcYDhQchRY20flzjHtGzdpiu+svrewbHL4fYnhMRkH4eR3z5/tIotZUNf95FBGG+zNk8dsYx6fzmXhSgvN3xF8Y5YkAcdh2HYTONhjTpLbLtMj3Jsc5yuCPP0M3REypERAREQEREBERAREQP/9k= " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>Essaida TV</h2>
+</button>
+
+
+
+<button onclick="window.open(' https://qanawat.taghtia.com/api/player/sahel-tv')">
+<img src=" data:image/png;base64,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  " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>TV صوت الساحل </h2>
+</button>
+
+
+
+<button onclick="window.open(' https://qanawat.taghtia.com/api/player/mosaique-fm')">
+<img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOCAYAAACOqiAdAAAABHNCSVQICAgIfAhkiAAAA/1JREFUeJzt2E9oHHUUwPHv+826aekfTczuBFu1xFjowT+ZRAqhqBWEClookggeFBEkYK3ePLUHL0JFQVpP/sHiyQjaiy0WD0KISWp21rQESlKoltTsbgqxJBXJ7szzsJlkiYp/dk2qvs9pmP3N7/fem7e/nVkwxhhjjDHGGGOMMcYYY4wxxhhjjDHGGGMaR0HWO4Z1p+AGwPutYoStPJQc57IcXT7vM1N7fZhFQx8dAC85l8ybnFttYjst3/i01xP7mt+9XIZ96uh08DjQDaTRpUgULpZI9UEU+mhQrMaXy1LpKpECCH0qQbF6DJDPcDdCZmPM+eseZ1G2I2xOEguKSOijQBklpYIIRKK82Vni1b+bR+qPhzTOWIY94jglcA0YRHk5Es4slLi8FyrJuG9b2RkrDIDXB5FItXPCNjIonoITiAHUcQ7l9Z88PhVoFuHFCM47xYthKGzlNmAxKNIEy10aASfrycXVc3Gt3/ta1BJhP9WEb1HlCYTjHlzY0sym2nHq0a+w0Auab2OHJvPHPKk140Za2KqwAY8TKD6QVnjXwbAKgyKAxxUgvRzDUsGDEsP15NuQjhsAr8OnEiqnEU4HRY6tHqPg8sKZisex6z8wk3RYLsti9xzXRrdxq7fILufoVOgXYSHvk0fpEKj0gubhaeBkknxTihcUCGb4ftynvVxkuhvKAKHPlwhfqzIn8FaY5QjCLmB3NZz6NGSPy7exI465JMIQSrMIn8XKtq4Sz4VZPkToAdpZ2cCR6r62qJD+VRBKBWFKlVERBoMiHwBMZNi86NGtMYEqD4jjANCU7GPJVkn1pqSAR1U5LMKDS+vOo1x0jsOdBT6vJ+eG/TiEbTyGckrh7a4ir4y0sDV9E88C/Qg5VfKxctZzTAYFZldfP+6zKVIWcLxGzBGEj4Gnlj4eDor0hFl0KeIyUECZDkr0QHX/TG9k4t7LzNXOq+A+Aemt3i+VBnQb3EDPRKHPfuAlp7yhjsnOAt8BnLuD5kqZu+KYnR7cGQstomxQ5WdxXNWIS57HrHhM3XeF6bWKd80Ll3RAH0QAuSwHRDgIPLJqaFHhfS/ixP1XmVw9x1fgZkF7VzqoYd30Z/zjhUseKaY6aJqf5yhwCEAVFaGskBZF1XGoq8Dx5JpeiNeyEH9VwwunIEnCoc97wPNaPRkBTpVIhJQooz+W2LMXKrXPZf8WDSlckviYzz2iDAlsoVoob2UIgvBFUGBfI9Zcb3UXbsxntygjCJq0G8svUEvzK88EJT6qd60bSd0PwE64neor1M0IFVa6TDTmYNcs79S7xn9W7b8b+TYeDn3G1zMeY4wxxhhjjDHGGGOMMcYYY4wxxhhjjDH/e78A9pBmfuecPPkAAAAASUVORK5CYII= " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>TV موزاييك  </h2>
+</button>
+
+
+
+<button onclick="window.open(' https://qanawat.taghtia.com/api/player/al-mustakillah')">
+<img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAABHNCSVQICAgIfAhkiAAAAxZJREFUWIXt0k1onEUcx/HvvOyzu8lumrRNrBuSpiJU+nIwubSClkYthYB4qO+lR23x0FIFUTxELwZpD76AohQPHgIJRT2o2NIqpWWtogdFS1DERaLG1rx0s7t59pln/h62l1yyYm8yn8sMM//582NmIAiCIAiCIAj+x2Tu4F0iouLZA48CiIiO/3h5+415XuSNkshijyy8MtRaG98GILUjI/+qf/X5bSLvbhGZ6r3psMk3G7zIb+vlqw4PcPLY8acbX28SgCfHCm/XZ/rlhUduk8XyRgFonscDpJdb41r27dw5kp4rSPNCr2+eK0i7et2u4PGJ0YxSA/MvfVK3AMrUc44cAO98vHzk1clZ85Mfsd27rymAD996KANw+kRrXFMH1PKJPzp537MZY9qWtw179EDFLX9JfGw/McCKKNFpq/Ghxza/9twY8XvPTDf++u5OAXh4ejoF2H98uiHj6CfGeuTKhS756P2prb9eLCblcnlo4VvVbHWvU0xi31fvWuf10s2H3d3/oyi53XQtFiyA19b7Gy98fbaS+manuTLbb3rmK6vOdTSVBTBmk5RMytLKkt7gchYW6Z5bZwHIAClYk72mpf1DrBn20J4H9uqqomPXwSi91QuAii9vr7tBD9DtcnFaGFZnTs/rq5ni6sYmQo3jO31VrfiIUlHSGvD9Z1Ol5YJHBLXZr0/rBl489fqb3POgbRdWrbV5756xvWcnPj2vdsz0rfy8Y85UUbgE4zXagMs4bFpA1DKJtxg8ijxKanhlMTiw4JI8VgTRGYRlXGTRKkEnnYiPiKWBlkwzP1rN/ueb7S1e10gW6uVhfAFvYlSUxWUNLvIorXGZGqlVqGyKy3qSXI00snitSAw4QEUxSWYFpxt4a1FOQHI4NH/nFtzEqbu/cKra9h+sebMAly4d7hscHK1ePPP5/fXGn1fPTn5QARi6o7eje+NQ9pbS1oF6HPVp8YLSBkAQK0JOvG+ayDTFi0qdZK2hmabaIqrhRdQvlZldJ5764bDxA/xu9lX6h09uaZcnCIIgCIIgCIJgtX8AJpRZu9lx5QQAAAAASUVORK5CYII=  " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>TVالمستقلة </h2>
+</button>
+
+
+

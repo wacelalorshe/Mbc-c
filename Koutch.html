@@ -1,0 +1,269 @@
+<!----------  اكواد استايل القنوات  ------------>
+<style type="text/css">
+.grid-container {
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 5px 5px;
+padding: 10px;
+}
+.grid1-container {
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(1, 1fr);
+grid-gap: 10px;
+
+color: black;
+padding: 4px;
+}
+h1 {
+text-align: center;
+margin-top: 1px;
+font-weight: bold;
+font-family: "Readex Pro", sans-serif;
+
+}
+
+h2 {
+text-align: center;
+margin-top: 0px;
+font-size: 12px;
+color: #000;
+font-family: "Readex Pro", sans-serif;
+font-weight: bold;
+}
+
+button {
+
+border-radius: 20px;
+background-image: linear-gradient(to right, #8A96D5, #fff , #fff, #fff , #fff, #fff , #fff, #fff, #fff, #fff , #fff, #8A96D5  );  padding: 2px;
+border-color: #000;
+padding: -5px;
+margin:8px 3px;
+height: 160px;
+width: 115px;
+} 
+
+.button {
+text-align: center;
+}
+ {
+display: block;
+}
+
+
+</style>
+
+<!----------  اكواد استايل التطبيق شامل  ------------>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+body {
+padding: 0;
+margin: 0;
+user-select: none;
+list-style: none;
+background-image: linear-gradient(to right, #8A96D5, #D4DBFF , #D4DBFF , #D4DBFF, #D4DBFF , #D4DBFF, #D4DBFF , #D4DBFF , #D4DBFF, #D4DBFF);  padding: 2px;
+background-size: cover;
+font-weight: 500;
+font-size: 16px;
+text-align: right;
+margin: auto;
+/* position: relative; */
+direction: ltr;
+
+/**  تغير  خلفيه التطبيق **/
+background-image: linear-gradient(to right, #D4DBFF, #D4DBFF , #D4DBFF , #D4DBFF, #D4DBFF , #D4DBFF, #D4DBFF , #D4DBFF , #D4DBFF, #D4DBFF);  padding: 2px;
+/**  تغير  خلفيه التطبيق **/
+}
+
+
+
+
+
+
+
+#page:hover {
+background: none;
+}
+#page {
+margin-top: 10px;
+width: 100%;
+}
+
+
+
+
+
+</style>
+
+<!----------  اكواد استايل القائمة  ------------>
+
+.
+
+
+
+
+
+   
+</head>
+<body dir="rtl">
+<header>
+
+<hr>
+<!-- /بداية كود شريط اخباري-->
+		<div class="marque">
+        <marquee direction="right" onMouseOver="this.stop();" onMouseOut="this.start();" div class="gif"> <img width="90"  src="data:image/png;base64,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" align="absmiddle"/> 
+        </marquee>
+    </div>
+   <hr>
+    
+   
+	<!-- /نهاية كود الشريط الاخباري-->
+
+
+
+<!--- اسم القسم --->
+<style>
+
+
+    
+   
+
+
+    
+    
+
+    
+
+    .btn { background-image: linear-gradient(to right, #B1BEFF, #E8ECFF , #D4DBFF );  padding: 2px;
+display: flex;      
+        color: #FF1B00;
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        padding: 2px;
+        display: flex;
+        justify-content: center; /* توسيط العنصر في وسط الخلفية *
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 100px;
+        margin: 10px;
+    
+        
+        
+
+    }
+
+    .btn {
+        background-image: linear-gradient(to right, #B1BEFF, #E8ECFF, #D4DBFF);
+        padding: 2px;
+        display: flex;
+        justify-content: center; /* توسيط العنصر في وسط الخلفية */
+        color: #000;
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 100px;
+        margin: 10px;
+        border: 1px solid #fff; /* اختياري: إضافة حدود للعنصر */
+        padding: 9px; /* اختياري: إضافة تباعد داخلي للعنصر */
+        border-color: #1300FF; /* يمكنك تعديل القيمة هنا لتغيير لون الحواف */
+    }
+
+    
+        
+</style>
+  
+<section class="matchesHp">
+    <div class="ttl">
+        <div class="matchesTtl">
+            <a href="go:Jedwal" class="btn yesterday">
+<span>   مــجــمــوعــــة قـــنـــوات دولــــــة الـــكـــويــــت</span>
+            </a>
+            
+         
+          
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+	
+</header>
+<div id="page">
+<div class="grid1-container">
+<div align="center" class="button">
+<div id="buttons-list">
+	
+	
+	
+<!--- اقسام التطبيق --->
+	
+	
+	
+
+<button onclick="window.open('go:Kuait')">
+<img src="   https://www10.0zz0.com/2023/05/31/02/666768633.jpg " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>قناة الكويت</h2>
+</button>
+
+
+
+<button onclick="window.open( '   https://qanawat.taghtia.com/api/player/kuwait-tv-2   ')">
+<img src="         https://qanawat.taghtia.com/assets/channels/kuwait-tv-2.png   " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>     الكويت 2 </h2>
+</button>
+
+
+
+
+
+
+<button onclick="window.open( '   https://qanawat.taghtia.com/api/player/khallik-bilbait   ')">
+<img src="        https://qanawat.taghtia.com/assets/channels/khallik-bilbait.png    " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>   خليك بالبيت   </h2>
+</button>
+
+
+
+<button onclick="window.open( '  https://qanawat.taghtia.com/api/player/ktv-ethraa    ')">
+<img src="        https://qanawat.taghtia.com/assets/channels/ktv-ethraa.png    " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>   اثراء   </h2>
+</button>
+
+
+
+<button onclick="window.open( '  https://qanawat.taghtia.com/api/player/ktv-arabe    ')">
+<img src="        https://qanawat.taghtia.com/assets/channels/ktv-arabe.png    " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>     العربي الكويتية </h2>
+</button>
+
+
+
+
+<button onclick="window.open( '   https://qanawat.taghtia.com/api/player/al-qurain   ')">
+<img src="     https://qanawat.taghtia.com/assets/channels/al-qurain.png       " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>      القرين</h2>
+</button>
+
+
+
+<button onclick="window.open( '  https://qanawat.taghtia.com/api/player/funoon-tv    ')">
+<img src="      https://qanawat.taghtia.com/assets/channels/funoon-tv.png      " style="border-radius: 8px;" height="80px" width="80px" vspace="5px" /><h2>     فنون </h2>
+</button>
+
+
+
+
+
+
+
